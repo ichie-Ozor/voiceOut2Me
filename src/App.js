@@ -1,9 +1,10 @@
+import Heropage from './component/Heropage';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <h1>Hello World</h1>
+     <Heropage />
     </div>
   );
 }
