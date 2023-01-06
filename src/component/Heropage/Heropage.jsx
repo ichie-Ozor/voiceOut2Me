@@ -8,7 +8,7 @@ const Heropage = () => {
   return (
     <div className='container'>
       <div className='Logo'>
-        <img src={ImageLogo} />
+        <img src={ImageLogo} alt="logo"/>
       </div>
       <h1 className='header-content'>
       Something  Awesome Is Coming
