@@ -1,14 +1,17 @@
 import React from 'react'
 import "./Heropage.css"
 import ImageLogo from "../../assets/images/project logo.png"
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import BackgroundImage from "../../assets/images/background.svg"
+// import { faHome } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Heropage = () => {
   return (
-    <div className='container'>
+    <div className='container'
+    style={{backgroundImage:`url(${BackgroundImage})`}}
+    >
       <div className='Logo'>
-        <img src={ImageLogo} />
+        <img src={ImageLogo} alt="logo"/>
       </div>
       <h1 className='header-content'>
       Something  Awesome Is Coming
@@ -16,7 +19,7 @@ const Heropage = () => {
       <p>It's going to be amazing! Sign up to find out when it's ready</p>
       <input type="email"  placeholder ="Email Address"/>
       <button>Sign Up	</button>
-      <FontAwesomeIcon icon={faHome} />
+      {/* <FontAwesomeIcon icon={faHome} /> */}
     </div>
   )
 }

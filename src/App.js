@@ -1,4 +1,4 @@
-import Heropage from './component/Heropage';
+import Heropage from './component/Heropage/Heropage';
 import './App.css';
 
 function App() {
