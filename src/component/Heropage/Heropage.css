@@ -1,0 +1,33 @@
+.container {
+    background-image: url("../../asset/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+.header-content {
+    font-size: 2.5rem;
+}
+input {
+    width: 30%;
+    padding: 8px 0px;
+    margin: 15px 0px;
+    outline: none;
+    border: 1px solid orange;
+}
+button {
+    padding: 7px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: orange;
+    color: #ffffff;
+    border-radius: 7px;
+
+}
