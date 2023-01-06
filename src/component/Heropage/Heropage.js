@@ -1,12 +1,15 @@
 import React from 'react'
 import "./Heropage.css"
 import ImageLogo from "../../assets/images/project logo.png"
+import BackgroundImage from "../../assets/images/background.svg"
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Heropage = () => {
   return (
-    <div className='container'>
+    <div className='container'
+    style={{backgroundImage:`url(${BackgroundImage})`}}
+    >
       <div className='Logo'>
         <img src={ImageLogo} alt="logo"/>
       </div>
