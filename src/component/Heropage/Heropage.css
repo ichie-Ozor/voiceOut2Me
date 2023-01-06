@@ -1,5 +1,5 @@
 .container {
-    background-image: url("../../asset/images/background.jpg");
+    background-image: url("../../assets/images/background.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +9,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #ffffff;
+    color: rgb(52, 202, 52);
+    position: relative;
 }
 .header-content {
     font-size: 2.5rem;
@@ -19,7 +20,7 @@ input {
     padding: 8px 0px;
     margin: 15px 0px;
     outline: none;
-    border: 1px solid orange;
+    border: 1px solid rgb(52, 202, 52);
 }
 button {
     padding: 7px 15px;
@@ -30,4 +31,10 @@ button {
     color: #ffffff;
     border-radius: 7px;
 
+}
+.Logo > img {
+    width: 7%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

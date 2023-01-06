@@ -1,11 +1,15 @@
 import React from 'react'
 import "./Heropage.css"
+import ImageLogo from "../../assets/images/project logo.png"
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Heropage = () => {
   return (
     <div className='container'>
+      <div className='Logo'>
+        <img src={ImageLogo} />
+      </div>
       <h1 className='header-content'>
       Something  Awesome Is Coming
       </h1>
