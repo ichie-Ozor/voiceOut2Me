@@ -1,10 +1,12 @@
 import React from "react";
-import Heropage from "../component/Heropage/Heropage";
+import ComingPage from "../component/comingpage/ComingPage";
+// import Heropage from "../component/Heropage/Heropage";
 
 const SoonComingPage = () => {
   return (
     <div>
-      <Heropage />
+      {/* <Heropage /> */}
+      <ComingPage/>
     </div>
   );
 };
