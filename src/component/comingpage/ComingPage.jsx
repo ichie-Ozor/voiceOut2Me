@@ -31,7 +31,7 @@ const ComingPage = () => {
         className="hero-image w-screen h-[57.938rem] bg-pink-200 mt-[3rem]"
         style={{
           background: `url(${HeroImage})`,
-          backgroundPosition: "cover",
+          backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}
       ></section>
