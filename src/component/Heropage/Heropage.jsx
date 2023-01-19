@@ -14,7 +14,7 @@ const Heropage = () => {
       <div className='Logo'>
         <img src={ImageLogo} alt="logo"/>
       </div>
-      <h1 className='header-content text-blue-800 font-[Lato, sans-serif]'>
+      <h1 className='header-content text-blue-800 '>
       Something  Awesome Is Coming
       </h1>
       <p>It's going to be amazing! Sign up to find out when it's ready</p>
