@@ -2,6 +2,7 @@ import React from 'react'
 import "./Heropage.css"
 import ImageLogo from "../../assets/images/project logo.png"
 import BackgroundImage from "../../assets/images/background.svg"
+import "../../assets/font.css" 
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,7 +14,7 @@ const Heropage = () => {
       <div className='Logo'>
         <img src={ImageLogo} alt="logo"/>
       </div>
-      <h1 className='header-content text-blue-800'>
+      <h1 className='header-content text-blue-800 font-[Lato, sans-serif]'>
       Something  Awesome Is Coming
       </h1>
       <p>It's going to be amazing! Sign up to find out when it's ready</p>
