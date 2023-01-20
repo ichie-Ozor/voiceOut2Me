@@ -8,9 +8,15 @@ module.exports = {
     extend: {
       fontFamily:{
         Lato:['Lato', 'sans-serif'],
-        OpenSand:['Open Sans', 'sans-serif']
-      }
+        OpenSand:['Open Sans', 'sans-serif'],
+      },
+
+      screens: {
+        'xs': '475px',
+        'sm': '576px',
     },
+
   },
   plugins: [],
+}
 }
