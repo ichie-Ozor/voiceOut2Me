@@ -10,14 +10,32 @@ const ComingPage = () => {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    alert("your email is "+email);
-    setEmail("")
+    alert("your email is " + email);
+    setEmail("");
   };
   return (
     <div>
-      <section>
-        <NavBar />
-      </section>
+      {/* <NavBar /> */}
+      <header className="w-[90vw] m-auto mb-6">
+        <section className="flex justify-between  items-center mt-4 bg-[#8155BA] p-2 h-[10vh] sm:h-[20Vh]">
+          <div className="logo-title flex justify-center items-center">
+            <div className="image overflow-hidden -ml-4">
+              <img className="sm:w-52 w-24" src={Logo} alt="logo" />
+            </div>
+
+            <h1 className="hidden lg:flex  text-white text-2xl -ml-8 mt-6">
+              VoiceOut2Me
+            </h1>
+          </div>
+          <div className="menu overflow-hidden w-8 flex lg:hidden">
+            <img src={Menu} alt="menu" />
+          </div>
+          <Link className="about-us border-[1px] border-white rounded-2xl px-6 py-2 text-2xl text-white hover:border-[2px] hidden lg:flex ">
+            About us
+          </Link>
+        </section>
+      </header>
+
       <section className=" w-[92vw] md:w-[85vw] m-auto ">
         <h1 className="font-OpenSand font-normal text-2xl text-center md:text-2xl md:text-left p-2 lg:text-left lg:text-4xl xl:text-5xl mb-2">
           Never deal with it alone, seek help and feel better!
@@ -51,11 +69,15 @@ const ComingPage = () => {
             />
             <div className="text-white w-[95%]">
               {/* <PrimaryBtn1 Name="Notify Me"  /> */}
-              <button className="text-white bg-[#8155BA] w-[100%] sm:w-[30%] py-2 rounded font-bold font-Lato">Notify Me</button>
+              <button className="text-white bg-[#8155BA] w-[100%] sm:w-[30%] py-2 rounded font-bold font-Lato">
+                Notify Me
+              </button>
             </div>
           </div>
         </form>
-        <h1 className=" text-lgfont-bold sm:4xl lg:text-4xl text-[#290C1E] font-Lato">We are about to launch!!!</h1>
+        <h1 className=" text-lgfont-bold sm:4xl lg:text-4xl text-[#290C1E] font-Lato">
+          We are about to launch!!!
+        </h1>
       </section>
     </div>
   );
