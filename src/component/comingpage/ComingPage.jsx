@@ -16,8 +16,8 @@ const ComingPage = () => {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    alert("your email is "+email);
-    setEmail("")
+    alert("your email is " + email);
+    setEmail("");
   };
   return (
     <div>
