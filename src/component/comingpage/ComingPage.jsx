@@ -21,7 +21,7 @@ const ComingPage = () => {
   return (
     <div>
       <header className="w-[90vw] m-auto mb-6 lg:w-[70vw] h-[10vh] ">
-        <section className="flex justify-between  items-center mt-4 bg-[#8155BA] p-2 h-[10vh] md:h-[12vw]">
+        <section className="flex justify-between  items-center mt-4 bg-[#8155BA] p-2 h-[10vh] sm:h-[12vw]">
           <div className="logo-title flex justify-center items-center">
             <div className="image overflow-hidden -ml-4 ">
               <img className=" w-24 sm:w-28 p-1" src={Logo} alt="logo" />
