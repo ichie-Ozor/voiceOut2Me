@@ -30,6 +30,8 @@ const ComingPage = () => {
       <section
         className="hero-image w-screen h-[15rem] xs:h-[20rem] sm:h-[30rem] lg:h-[40rem] xl:h-[57.938rem] bg-pink-200 mt-[3rem]"
         style={{
+          width:"500px",
+          height:"500px",
           background: `url(${HeroImage})`,
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
