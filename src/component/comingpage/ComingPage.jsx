@@ -19,13 +19,12 @@ const ComingPage = () => {
     setEmail("");
   };
   return (
-    <div>
-      <header className="w-[90vw] m-auto mb-6 lg:w-[70vw] h-[10vh] ">
-        <section className="flex justify-between  items-center mt-4 bg-[#8155BA] p-2 min-h-[8vh] h-[10vh] sm:-h-[8vh]  ">
-          <div className="logo-title flex justify-center items-center">
-            <div className="image overflow-hidden -ml-4 ">
-              <img className=" w-24 sm:w-28 p-1 xl:p-2" src={Logo} alt="logo" />
-            </div>
+    <div className="flex justify-center items-center">
+      <section className="mt-4">
+      <header className="w-[90vw] m-auto  lg:w-[70vw] h-[10vh] flex relative items-center  bg-[#8155BA]">
+              <img className=" h-[5rem] overflow-visible" src={Logo} alt="logo" />
+        <section className="flex justify-between  items-center p-2 w-[100%]  ">
+          <div className="logo-title flex justify-center items-center ">
 
             <h1 className=" text-sm text-white sm:text-xl -ml-5  font-bold font-OpenSand">
               VoiceOut2Me
@@ -41,7 +40,7 @@ const ComingPage = () => {
       </header>
 
       <section className=" w-[92vw] md:w-[85vw] m-auto lg:mb-16">
-        <h1 className="font-OpenSand font-normal text-2xl text-center md:text-2xl md:text-left p-2 lg:text-center lg:text-3xl xl:text-4xl">
+        <h1 className="font-OpenSand font-normal text-2xl text-center md:text-2xl md:text-left p-2 lg:text-center lg:text-3xl xl:text-4xl mt-4">
           Never deal with it alone, seek help and feel better!
           <Hamburger/>
 
@@ -95,6 +94,7 @@ const ComingPage = () => {
           We are about to launch!!!
         </h1>
         <div></div>
+      </section>
       </section>
     </div>
   );
