@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import HeroImage from "../../assets/images/comingpage/coming-soon-page-hero.svg";
-import { Link } from 'react-router-dom'
-import Menu from '../../assets/images/comingpage/menu.svg'
-import Logo from '../../assets/images/comingpage/logo.svg'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
-
+import { Link } from "react-router-dom";
+import Menu from "../../assets/images/comingpage/menu.svg";
+import Logo from "../../assets/images/comingpage/logo.svg";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'; // You can also use <link> for styles
+// // ..
+// AOS.init();
 
 const ComingPage = () => {
   const [email, setEmail] = useState("");
@@ -21,28 +20,38 @@ const ComingPage = () => {
   };
   return (
     <div>
-        <header className='w-[90vw] m-auto mb-6 lg:w-[70vw] h-[10vh] '>
-        <section className='flex justify-between  items-center mt-4 bg-[#8155BA] p-2 h-[10vh] '>
-            <div className="logo-title flex justify-center items-center">
-              <div className="image overflow-hidden -ml-4"><img className=' w-24 sm:w-28' src={Logo} alt="logo" /></div>
-              
-              <h1 className='hidden sm:flex  text-white text-xl -ml-5 mt-2'>VoiceOut2Me</h1>
-              </div>
-              <div className="menu overflow-hidden w-8 flex lg:hidden"><img src={Menu} alt="menu" /></div>
-            <Link className="about-us border-[1px] border-white rounded-2xl px-6 py-2 text-lg text-white hover:border-[2px] hidden lg:flex ">About us</Link>
+      <header className="w-[90vw] m-auto mb-6 lg:w-[70vw] h-[10vh] ">
+        <section className="flex justify-between  items-center mt-4 bg-[#8155BA] p-2 h-[10vh] ">
+          <div className="logo-title flex justify-center items-center">
+            <div className="image overflow-hidden -ml-4">
+              <img className=" w-24 sm:w-28" src={Logo} alt="logo" />
+            </div>
+
+            <h1 className="hidden sm:flex  text-white text-xl -ml-5  font-bold font-OpenSand">
+              VoiceOut2Me
+            </h1>
+          </div>
+          <div className="menu overflow-hidden w-8 flex lg:hidden">
+            <img src={Menu} alt="menu" />
+          </div>
+          <Link className="about-us border-[1px] border-white rounded-2xl px-6 py-2 text-lg text-white hover:border-[2px] hidden lg:flex ">
+            About us
+          </Link>
         </section>
-    </header>
+      </header>
 
       <section className=" w-[92vw] md:w-[85vw] m-auto lg:mb-16">
         <h1 className="font-OpenSand font-normal text-2xl text-center md:text-2xl md:text-left p-2 lg:text-center lg:text-3xl xl:text-4xl mb-2">
           Never deal with it alone, seek help and feel better!
         </h1>
-        <p  className="font-OpenSand font-normal md:w-[82%] md:text-sm md:text md:ml-[5px] text-center  lg:text-center lg:text-xl p-2 w-[85%] m-auto lg:ml-14 xl:px-32 xl:text-left"
-        data-aos="fade-up"
-        data-aos-delay="200"
+        <p
+          className="font-OpenSand font-normal md:w-[82%] md:text-sm md:text md:ml-[5px] text-center  lg:text-center lg:text-xl p-2 w-[85%] m-auto lg:ml-14 xl:px-32 xl:text-left"
+          data-aos="fade-up"
+          data-aos-duration="2000"
         >
-          We have ears that are open, so it’s good not to be alright. VoiceOut2Me
-          is here to guide you on the path to getting better from depression.
+          We have ears that are open, so it’s good not to be alright.
+          VoiceOut2Me is here to guide you on the path to getting better from
+          depression.
         </p>
       </section>
       <section
@@ -54,7 +63,9 @@ const ComingPage = () => {
         }}
       ></section>
       <section className="subscribe-wrapper w-[90%] lg:w-[80%] m-auto mt-6 p-4 flex flex-col justify-center items-center gap-8 my-14 max-[320px]:mt-0 lg:-mt-36 xl:-mt-80">
-        <h1 className="subscribe-title text-[#290C1E] font-semibold text-lg text-center lg:text-2xl">
+        <h1
+          className="subscribe-title text-[#290C1E] font-semibold text-lg text-center lg:text-2xl"
+        >
           Subscribe to our Newsletter to get full updates when the website
           launches.
         </h1>
@@ -68,15 +79,20 @@ const ComingPage = () => {
               value={email}
             />
             <div className="text-white w-[95%]">
-              <button className="text-white bg-[#8155BA] w-[100%] sm:w-[30%] py-2 rounded font-bold font-Lato hover:opacity-70">Notify Me</button>
+              <button className="text-white bg-[#8155BA] w-[100%] sm:w-[30%] py-2 rounded font-bold font-Lato hover:opacity-70">
+                Notify Me
+              </button>
             </div>
           </div>
         </form>
-        <h1 className=" text-lgfont-bold sm:4xl lg:text-4xl text-[#290C1E] font-Lato"
-                data-aos="fade-up"
-                data-aos-delay="200"
-        
-        >We are about to launch!!!</h1>
+        <h1
+          className=" text-lg font-bold sm:text-4xl text-[#290C1E] font-Lato"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          We are about to launch!!!
+        </h1>
+        <div></div>
       </section>
     </div>
   );
