@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import HeroImage from "../../assets/images/comingpage/coming-soon-page-hero.svg";
 import { Link } from "react-router-dom";
-import Menu from "../../assets/images/comingpage/menu.svg";
 import Logo from "../../assets/images/comingpage/logo.svg";
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; // You can also use <link> for styles
-// // ..
-// AOS.init();
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Hamburger from "../Hamburger";
+// ..
+AOS.init();
 
 const ComingPage = () => {
   const [email, setEmail] = useState("");
@@ -23,29 +23,31 @@ const ComingPage = () => {
       <header className="w-[90vw] m-auto mb-6 lg:w-[70vw] h-[10vh] ">
         <section className="flex justify-between  items-center mt-4 bg-[#8155BA] p-2 h-[10vh] ">
           <div className="logo-title flex justify-center items-center">
-            <div className="image overflow-hidden -ml-4">
-              <img className=" w-24 sm:w-28" src={Logo} alt="logo" />
+            <div className="image overflow-hidden -ml-4 ">
+              <img className=" w-24 sm:w-28 p-4" src={Logo} alt="logo" />
             </div>
 
-            <h1 className="hidden sm:flex  text-white text-xl -ml-5  font-bold font-OpenSand">
+            <h1 className=" text-sm text-white sm:text-xl -ml-7  font-bold font-OpenSand">
               VoiceOut2Me
             </h1>
           </div>
-          <div className="menu overflow-hidden w-8 flex lg:hidden">
-            <img src={Menu} alt="menu" />
+          <div className="menu lg:hidden">
+            <Hamburger/>
           </div>
-          <Link className="about-us border-[1px] border-white rounded-2xl px-6 py-2 text-lg text-white hover:border-[2px] hidden lg:flex ">
+          <Link className="about-us border-[1px] border-white rounded-2xl px-6 py-1 text-lg text-white hover:border-[2px] hidden lg:flex ">
             About us
           </Link>
         </section>
       </header>
 
       <section className=" w-[92vw] md:w-[85vw] m-auto lg:mb-16">
-        <h1 className="font-OpenSand font-normal text-2xl text-center md:text-2xl md:text-left p-2 lg:text-center lg:text-3xl xl:text-4xl mb-2">
+        <h1 className="font-OpenSand font-normal text-2xl text-center md:text-2xl md:text-left p-2 lg:text-center lg:text-3xl xl:text-4xl">
           Never deal with it alone, seek help and feel better!
+          <Hamburger/>
+
         </h1>
         <p
-          className="font-OpenSand font-normal md:w-[82%] md:text-sm md:text md:ml-[5px] text-center  lg:text-center lg:text-xl p-2 w-[85%] m-auto lg:ml-14 xl:px-32 xl:text-left"
+          className="font-OpenSand font-normal md:w-[82%] md:text-sm  md:text-left md:-mt-6 text-center  lg:text-left lg:text-lg lg:px-[3rem] xl:px-[8rem] w-[85%] m-auto md:ml-2 lg:ml-10 xl:ml-[4rem]"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
