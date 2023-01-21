@@ -21,10 +21,10 @@ const ComingPage = () => {
   return (
     <div>
       <header className="w-[90vw] m-auto mb-6 lg:w-[70vw] h-[10vh] ">
-        <section className="flex justify-between  items-center mt-4 bg-[#8155BA] p-2 h-[10vh] sm:h-[9vw]">
+        <section className="flex justify-between  items-center mt-4 bg-[#8155BA] p-2 min-h-[8vh] h-[10vh] sm:-h-[8vh]  ">
           <div className="logo-title flex justify-center items-center">
             <div className="image overflow-hidden -ml-4 ">
-              <img className=" w-24 sm:w-28 p-1" src={Logo} alt="logo" />
+              <img className=" w-24 sm:w-28 p-1 xl:p-2" src={Logo} alt="logo" />
             </div>
 
             <h1 className=" text-sm text-white sm:text-xl -ml-5  font-bold font-OpenSand">
@@ -47,7 +47,7 @@ const ComingPage = () => {
 
         </h1>
         <p
-          className="font-OpenSand font-normal md:w-[82%] md:text-sm  md:text-left md:-mt-6 text-center  lg:text-left lg:text-lg lg:px-[3rem] xl:px-[8rem] w-[85%] m-auto md:ml-2 lg:ml-10 xl:ml-[4rem]"
+          className="font-OpenSand font-normal md:w-[82%] md:text-sm  md:text-left md:-mt-6 text-center  lg:text-left lg:text-lg lg:px-[3rem] xl:px-[8rem] w-[85%] m-auto md:ml-2 lg:ml-16 xl:ml-[rem]"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
