@@ -22,7 +22,7 @@ const ComingPage = () => {
   return (
     <div >
       <section className="w-screen">
-        <header className="w-[]  h-[5.438rem] flex relative items-center justify-center bg-[#695E93] overflow-hidden">
+        <header className=" h-[5.438rem] flex relative items-center justify-center bg-[#695E93] overflow-hidden">
           <img className=" absolute h-[8rem] sm:h-[9rem] -left-4 sm:left-0 lg:left-2 xl:left-8" src={Logo} alt="logo" />
           <section className="flex  justify-between items-center w-[85%] ml-4">
               <h1 className=" text-sm text-white sm:text-xl  font-bold font-OpenSand pl-14 lg:pl-10">
@@ -37,7 +37,7 @@ const ComingPage = () => {
           </section>
         </header>
 
-        <section className=" w-[92%] md:w-[95%] m-auto lg:mt-10 lg:mb-20  py-4 flex flex-col items-center ">
+        <section className=" w-[92%] md:w-[90%] m-auto lg:mt-10 lg:mb-20  py-4 flex flex-col items-center ">
           <h1 className="mb-6 font-OpenSand font-normal text-2xl text-center md:text-[24.5px] md:text-left   lg:text-center lg:text-4xl xl:text-5xl   mt-4">
             Never deal with it alone, seek help and feel better!
           </h1>
@@ -65,7 +65,7 @@ const ComingPage = () => {
             Subscribe to our Newsletter to get full updates when the website
             launches.
           </h1>
-          <form className="w-[90%]" action="#" onSubmit={submitHandler}>
+          <form className="w-[85%]" action="#" onSubmit={submitHandler}>
             <div className="input-btn-wrapper flex flex-col gap-2 w-[100%] sm:flex-row items-center justify-center sm:ml-[20%] md:ml-[12%]">
               <input
                 className="w-[95%] lg:w-[80%] border-[1px] border-[#290C1E] rounded p-2"
