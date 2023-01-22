@@ -65,7 +65,7 @@ const ComingPage = () => {
             Subscribe to our Newsletter to get full updates when the website
             launches.
           </h1>
-          <form className="w-[85%]" action="#" onSubmit={submitHandler}>
+          <form className="w-[83%]" action="#" onSubmit={submitHandler}>
             <div className="input-btn-wrapper flex flex-col gap-2 w-[100%] sm:flex-row items-center justify-center sm:ml-[20%] md:ml-[12%]">
               <input
                 className="w-[95%] lg:w-[80%] border-[1px] border-[#290C1E] rounded p-2"
