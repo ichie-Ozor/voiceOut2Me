@@ -81,7 +81,7 @@ const ComingPage = () => {
             backgroundRepeat: "no-repeat",
           }}
         ></section>
-        <section className="subscribe-wrapper w-[90%] lg:w-[80%] m-auto mt-6 p-4 flex flex-col justify-center items-center gap-8 my-14 max-[320px]:mt-0 lg:-mt-24 xl:-mt-48">
+        <section className=" subscribe-wrapper font-Lato w-[90%] lg:w-[80%] m-auto mt-6 p-4 flex flex-col justify-center items-center gap-8 my-14 max-[320px]:mt-0 lg:-mt-24 xl:-mt-48">
           <h1 className="subscribe-title text-[#290C1E] font-semibold text-lg text-center lg:text-xl xl:text-2xl">
             Subscribe to our Newsletter to get full updates when the website
             launches.
@@ -98,7 +98,7 @@ const ComingPage = () => {
                 value={email}
                 onChange={onchangeHandler}
               />
-              <span className="absolute text-red-600 left-2 top-10 text-sm lg:text-lg "> {errors?.email_address?.message}</span>
+              <span className="absolute text-red-600 left-2 top-10 text-sm lg:text-lg p-1 italic font-OpenSand"> {errors?.email_address?.message}</span>
               <div className="text-white w-[95%]  ">
                 <button className="text-white bg-[#8155BA] w-[100%] sm:w-[30%] md:w-[50%]  lg:w-[52%] py-2 md:px-1 rounded font-bold font-Lato hover:opacity-70 ">
                   Notify Me
