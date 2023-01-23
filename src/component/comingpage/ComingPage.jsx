@@ -88,7 +88,7 @@ const ComingPage = () => {
           </h1>
           <form className="w-[83%]" action="#" onSubmit={handleSubmit(submitHandler)}>
             <div className={classNames("input-btn-wrapper flex flex-col gap-2 w-[100%] sm:flex-row items-center justify-center sm:ml-[20%] md:ml-[12%] relative",
-            {"gap-5":errors?.email_address})}>
+            {"gap-6":errors?.email_address})}>
               <input
                 className={classNames("w-[95%] lg:w-[80%] border-[1px] border-[#290C1E] rounded p-2",
                 { "border-red-600": errors?.email_address})}
