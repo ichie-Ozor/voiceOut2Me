@@ -1,21 +1,26 @@
 import React, { useState } from "react";
 import HeroImage from "../../assets/images/comingpage/coming-soon-page-hero.svg";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/comingpage/logo.svg";
+import Logo from "../../assets/images/comingpage/logo.svg"; 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Hamburger from "../Hamburger";
 import "../../app.css"
 // ..
 AOS.init();
-
 const ComingPage = () => {
   const [email, setEmail] = useState("");
+
+  
   const onchangeHandler = (e) => {
     setEmail(e.target.value);
   };
+
   const submitHandler = (e) => {
+    const value=e.target.value
+    console.log(value);
     e.preventDefault();
+    ValidateEmail(value)
     alert("your email is " + email);
     setEmail("");
   };
@@ -65,7 +70,7 @@ const ComingPage = () => {
             Subscribe to our Newsletter to get full updates when the website
             launches.
           </h1>
-          <form className="w-[83%]" action="#" onSubmit={submitHandler}>
+          <form name="form1" className="w-[83%]" action="#" onSubmit={submitHandler}>
             <div className="input-btn-wrapper flex flex-col gap-2 w-[100%] sm:flex-row items-center justify-center sm:ml-[20%] md:ml-[12%]">
               <input
                 className="w-[95%] lg:w-[80%] border-[1px] border-[#290C1E] rounded p-2"
@@ -73,6 +78,7 @@ const ComingPage = () => {
                 placeholder="Email Address"
                 onChange={onchangeHandler}
                 value={email}
+                name="email"
               />
               <div className="text-white w-[95%]">
                 <button className="text-white bg-[#8155BA] w-[100%] sm:w-[30%] md:w-[50%]  lg:w-[52%] py-2 md:px-1 rounded font-bold font-Lato hover:opacity-70 ">
