@@ -17,7 +17,7 @@ AOS.init();
 
 const ComingPage = () => {
   const schema = yup.object().shape({
-    email_address: yup.string().email("Email must be a valid email").required("Email field cannot be empy"),
+    email_address: yup.string().email("Email must be a valid email").required("Email field cannot be empty"),
   });
   const {
     register,
