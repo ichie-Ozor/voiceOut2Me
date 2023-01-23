@@ -87,7 +87,8 @@ const ComingPage = () => {
             launches.
           </h1>
           <form className="w-[83%]" action="#" onSubmit={handleSubmit(submitHandler)}>
-            <div className="input-btn-wrapper flex flex-col gap-2 w-[100%] sm:flex-row items-center justify-center sm:ml-[20%] md:ml-[12%] relative">
+            <div className={classNames("input-btn-wrapper flex flex-col gap-2 w-[100%] sm:flex-row items-center justify-center sm:ml-[20%] md:ml-[12%] relative",
+            {"gap-5":errors?.email_address})}>
               <input
                 className={classNames("w-[95%] lg:w-[80%] border-[1px] border-[#290C1E] rounded p-2",
                 { "border-red-600": errors?.email_address})}
@@ -97,8 +98,8 @@ const ComingPage = () => {
                 value={email}
                 onChange={onchangeHandler}
               />
-              <span className="absolute text-red-600 left-0 top-10"> {errors?.email_address?.message}</span>
-              <div className="text-white w-[95%]">
+              <span className="absolute text-red-600 left-2 top-10 text-sm lg:text-lg "> {errors?.email_address?.message}</span>
+              <div className="text-white w-[95%]  ">
                 <button className="text-white bg-[#8155BA] w-[100%] sm:w-[30%] md:w-[50%]  lg:w-[52%] py-2 md:px-1 rounded font-bold font-Lato hover:opacity-70 ">
                   Notify Me
                 </button>
