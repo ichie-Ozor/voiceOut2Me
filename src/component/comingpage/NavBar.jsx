@@ -6,9 +6,9 @@ import Logo from '../../assets/images/comingpage/logo.svg'
 const NavBar = () => {
   return (
     <header className='w-[90vw] m-auto mb-6'>
-        <section className='flex justify-between  items-center mt-4 bg-[#8155BA] p-2 h-[10vh] sm:h-[20Vh]'>
+        <section className='flex justify-between  items-center mt-4 bg-[#8155BA] p-2 h-[10vh] sm:h-[20Vh] '>
             <div className="logo-title flex justify-center items-center">
-              <div className="image overflow-hidden -ml-4"><img className='sm:w-52 w-24' src={Logo} alt="logo" /></div>
+              <div className="image overflow-hidden -ml-4"><img className='sm:w-32 w-24' src={Logo} alt="logo" /></div>
               
               <h1 className='hidden lg:flex  text-white text-2xl -ml-8 mt-6'>VoiceOut2Me</h1>
               </div>

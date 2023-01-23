@@ -37,14 +37,14 @@ const ComingPage = () => {
           </section>
         </header>
 
-        <section className=" w-[92%] md:w-[90%] m-auto lg:mt-10 lg:mb-20  py-4 flex flex-col items-center ">
-          <h1 className="mb-6 font-OpenSand font-normal text-2xl text-center md:text-[24.5px] md:text-left   lg:text-center lg:text-4xl xl:text-5xl   mt-4">
+        <section className=" w-[92%] md:w-[90%] m-auto lg:mt-10 lg:mb-20  py-4 flex flex-col items-center bg-slate-400 ">
+          <h1 className="mb-6 font-OpenSand font-normal text-2xl text-center md:text-[24.5px] md:text-left   lg:text-center lg:text-4xl xl:text-5xl  mt-4 bg-red-200">
             Never deal with it alone, seek help and feel better!
           </h1>
           <p
-            className="font-OpenSand font-normal md:w-[79%] md:text-sm  md:text-left  text-center  lg:text-left lg:text-[18.5px] md:ml-[80px] lg:leading-[32px]  lg:ml-16 w-[85%] m-auto xl:ml-32 xl:leading-[40px] xl:text-[26px]  xl:mt-5 min-[13360]:ml-50 "
-            data-aos="fade-up"
-            data-aos-duration="2000"
+            className="font-OpenSand font-normal md:w-[79%] md:text-sm  md:text-left  text-center  lg:text-left lg:text-[17.5px] md:ml-[80px] lg:leading-[32px]  lg:ml-[2.5rem] w-[85%] m-auto xl:leading-[40px]  xl:mt-5 min-[1366px]:ml-[3.5rem] min-[1366px]:text-[23px] min-[1440px]:text-[24.5px] min-[1440px]:ml-[5.5rem] xl:ml-[2rem] bg-green-200"
+            // data-aos="fade-up"
+            // data-aos-duration="2000"
 
           >
             We have ears that are open, so it’s good not to be alright.
