@@ -9,7 +9,6 @@ import "../../app.css"
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useRef } from "react";
 import classNames from "classnames";
 
 
@@ -31,7 +30,6 @@ const ComingPage = () => {
 
     resolver: yupResolver(schema),
   });
-const errorRef=useRef()
   const [email, setEmail] = useState("");
   const onchangeHandler = (e) => {
     setEmail(e.target.value);
