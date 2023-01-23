@@ -43,8 +43,8 @@ const ComingPage = () => {
           </h1>
           <p
             className="font-OpenSand font-normal md:w-[79%] md:text-[13px] md:ml-[4rem]  md:text-left  text-center  lg:text-left lg:text-[17.5px]  lg:leading-[32px]  lg:ml-[2.5rem] w-[85%] m-auto xl:leading-[40px]  xl:mt-5 min-[1366px]:ml-[3.5rem] min-[1366px]:text-[23px] min-[1440px]:text-[24.5px] min-[1440px]:ml-[5.5rem] xl:ml-[2rem]"
-            // data-aos="fade-up"
-            // data-aos-duration="2000"
+            data-aos="fade-up"
+            data-aos-duration="2000"
 
           >
             We have ears that are open, so it’s good not to be alright.
