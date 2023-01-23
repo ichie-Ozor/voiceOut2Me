@@ -6,19 +6,42 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Hamburger from "../Hamburger";
 import "../../app.css"
+import * as yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useRef } from "react";
+import classNames from "classnames";
+
+
 // ..
 AOS.init();
 
 const ComingPage = () => {
+  const schema = yup.object().shape({
+    email_address: yup.string().email("Email must be a valid email").required("Email field cannot be empy"),
+  });
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm({
+    mode: "onsubmit",
+    criticalMode: "all",
+    revalidateMode: "onchange",
+
+    resolver: yupResolver(schema),
+  });
+const errorRef=useRef()
   const [email, setEmail] = useState("");
   const onchangeHandler = (e) => {
     setEmail(e.target.value);
   };
   const submitHandler = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     alert("your email is " + email);
     setEmail("");
   };
+
   return (
     <div >
       <section className="w-screen">
@@ -65,15 +88,18 @@ const ComingPage = () => {
             Subscribe to our Newsletter to get full updates when the website
             launches.
           </h1>
-          <form className="w-[83%]" action="#" onSubmit={submitHandler}>
-            <div className="input-btn-wrapper flex flex-col gap-2 w-[100%] sm:flex-row items-center justify-center sm:ml-[20%] md:ml-[12%]">
+          <form className="w-[83%]" action="#" onSubmit={handleSubmit(submitHandler)}>
+            <div className="input-btn-wrapper flex flex-col gap-2 w-[100%] sm:flex-row items-center justify-center sm:ml-[20%] md:ml-[12%] relative">
               <input
-                className="w-[95%] lg:w-[80%] border-[1px] border-[#290C1E] rounded p-2"
+                className={classNames("w-[95%] lg:w-[80%] border-[1px] border-[#290C1E] rounded p-2",
+                { "border-red-600": errors?.email_address})}
                 type="text"
                 placeholder="Email Address"
-                onChange={onchangeHandler}
+                {...register("email_address")}
                 value={email}
+                onChange={onchangeHandler}
               />
+              <span className="absolute text-red-600 left-0 top-10"> {errors?.email_address?.message}</span>
               <div className="text-white w-[95%]">
                 <button className="text-white bg-[#8155BA] w-[100%] sm:w-[30%] md:w-[50%]  lg:w-[52%] py-2 md:px-1 rounded font-bold font-Lato hover:opacity-70 ">
                   Notify Me
