@@ -72,7 +72,7 @@ const ComingPage = () => {
             <div className="menu lg:hidden">
               <Hamburger />
             </div>
-            <Link className="about-us border-[1px] border-white rounded-2xl px-6 py-1 text-lg text-white hover:border-[2px] hidden lg:flex ">
+            <Link to={"/home"} className="about-us border-[1px] border-white rounded-2xl px-6 py-1 text-lg text-white hover:border-[2px] hidden lg:flex ">
               About us
             </Link>
           </section>
