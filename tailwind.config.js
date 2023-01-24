@@ -14,10 +14,10 @@ module.exports = {
       screens: {
         'xs': '475px',
         'sm': '576px',
-        // '2l':'1366',
-        // 'xxs':{'max':'320px',}
     },
-
+colors:{
+  // 'secondary':"#290C1E"
+}
   },
   plugins: [],
 }
