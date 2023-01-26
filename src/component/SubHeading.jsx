@@ -4,11 +4,11 @@ import SubHeadIMage1 from "../assets/images/landing page/sub-head-image1.svg";
 
 const SubHeading = () => {
   return (
-    <div className="ralative">
+    <>
       <section className="w-[83vw] m-auto flex justify-between mt-[4.625rem]">
         <div className="get-help w-[40%] mt-[5%]">
           <h1 className="text-[52px] text-[#290C1E] font-Lato font-normal p-2">
-            Voice out and be heard!.
+            Voice out and be heard!
           </h1>
           <p className=" w-[25rem] font-Lato text-[#290C1E]">
             We prioritize your mental wellness. Voice out, and lets help you
@@ -29,8 +29,8 @@ const SubHeading = () => {
         >
         </div>
       </section>
-      <hr className="w-[83vw] absolute left-[6.8rem] bottom-[-5.7rem] border-[0.5px] border-[#696869]"/>
-    </div>
+      <hr className="w-[83vw]  ml-[6.8rem] -mt-6 border-[0.5px] border-[#696869]"/>
+    </>
   );
 };
 
