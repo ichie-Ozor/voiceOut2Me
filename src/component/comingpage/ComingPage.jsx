@@ -37,11 +37,11 @@ const ComingPage = () => {
     setEmail(e.target.value);
   };
 
-  const submitHandler = async(e) => {
+  const submitHandler = async (e) => {
     // e.preventDefault();
     const emialApi =
       " https://v1.nocodeapi.com/agyanim/google_sheets/jFKFHafoRspFBbnt?tabId=sheet1";
-     
+
     try {
       const response = await fetch(emialApi, {
         method: "POST",
@@ -49,10 +49,10 @@ const ComingPage = () => {
         body: JSON.stringify([[email, new Date().toLocaleString()]]),
       });
       await response.json();
-      alert("your email is " + email);
+      alert("Response submitted successfully");
       setEmail("");
     } catch (error) {
-      console.log(error);
+      alert(error);
     }
   };
 
