@@ -1,24 +1,35 @@
 import React from "react";
+import SubHeadHero from "../assets/images/landing page/sub-head-hero-image.svg";
+import SubHeadIMage1 from "../assets/images/landing page/sub-head-image1.svg";
 
 const SubHeading = () => {
   return (
-    <div>
+    <div className="ralative">
       <section className="w-[83vw] m-auto flex justify-between mt-[4.625rem]">
-        <div className="get-help w-[49%] mt-[10%]">
-          <h1 className="text-[50px] text-[#290C1E] font-Lato font-normal p-2">
-            Get Help,Get Better. You Deserved to be happy.
+        <div className="get-help w-[40%] mt-[5%]">
+          <h1 className="text-[52px] text-[#290C1E] font-Lato font-normal p-2">
+            Voice out and be heard!.
           </h1>
-          <p className="text-center w-[27rem] m-auto font-Lato text-[#290C1E]">
-            No matter what’s troubling you,Get the counsel you need here, and
-            right now.
+          <p className=" w-[25rem] font-Lato text-[#290C1E]">
+            We prioritize your mental wellness. Voice out, and lets help you
+            move forward in the face of depression.
           </p>
-          <section className="flex gap-8 mt-[6.625rem]">
-            <button className="chat-now bg-[#52193C] text-white py-[17.5px] px-[49.58px] rounded">Chat Now</button>
-            <button className="book-appointment rounded border-[1px] border-black py-[18.5px] px-[9.5px]">Book Appointments</button>
-          </section>
+          <button className="chat-now bg-[#8155BA] text-white py-[17.5px] px-[49.58px] rounded mt-[40px]">
+            Get Started
+          </button>
+          <img className="mt-[2.563rem]" src={SubHeadIMage1} alt="" />
         </div>
-        <div className="image-container w-[49%] h-[38.063rem] bg-[#D9D9D9] "></div>
+        <div
+          className="image-container w-[53.67%] h-[38.063rem] bg-[#D9D9D9] "
+          style={{
+            background: `url(${SubHeadHero})`,
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+        </div>
       </section>
+      <hr className="w-[83vw] absolute left-[6.8rem] bottom-[-5.7rem] border-[0.5px] border-[#696869]"/>
     </div>
   );
 };
