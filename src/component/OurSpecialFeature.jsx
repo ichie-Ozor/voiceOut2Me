@@ -4,18 +4,18 @@ import SpecialFeatures from "../util/ourSpecialFeatureItems.js";
 import RightRiangleImage from "../assets/images/landing page/right-triangle.svg"
 
 const OurSpecialFeature = () => {
-  const renderOurSpecialFeature = SpecialFeatures.map((feature) => {
-    return (
-      <div key={feature.id}>
-        <OurSpecialFeatureCard
-          Icon={feature.icon}
-          Title={feature.title}
-          Note={feature.note}
-          Button={feature.button}
-        />
-      </div>
-    );
-  });
+  // const renderOurSpecialFeature = SpecialFeatures.map((feature) => {
+  //   return (
+  //     <div key={feature.id}>
+  //       <OurSpecialFeatureCard
+  //         Icon={feature.icon}
+  //         Title={feature.title}
+  //         Note={feature.note}
+  //         Button={feature.button}
+  //       />
+  //     </div>
+  //   );
+  // });
   return (
     <div className="w-[92vw] h-[40.375rem] ml-auto flex">
       <section className="w-[55%] flex gap-[5rem] mt-[10rem] overflow-hidden ">
