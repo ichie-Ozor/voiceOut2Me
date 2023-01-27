@@ -1,6 +1,6 @@
 import React from "react";
 import OurSpecialFeatureCard from "./landing page/OurSpecialFeatureCard";
-import SpecialFeatures from "../util/ourSpecialFeatureItems.js";
+// import SpecialFeatures from "../util/ourSpecialFeatureItems.js";
 import RightRiangleImage from "../assets/images/landing page/right-triangle.svg"
 
 const OurSpecialFeature = () => {
