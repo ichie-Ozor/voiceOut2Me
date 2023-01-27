@@ -1,6 +1,7 @@
 import React from "react";
 import OurSpecialFeatureCard from "./landing page/OurSpecialFeatureCard";
 import SpecialFeatures from "../util/ourSpecialFeatureItems.js";
+import RightRiangleImage from "../assets/images/landing page/right-triangle.svg"
 
 const OurSpecialFeature = () => {
   const renderOurSpecialFeature = SpecialFeatures.map((feature) => {
@@ -16,10 +17,10 @@ const OurSpecialFeature = () => {
     );
   });
   return (
-    <div className="w-[83vw] h-[40.375rem] m-auto flex">
-      <section className="w-[58%] flex gap-[10rem] mt-[10rem]">
+    <div className="w-[91vw] h-[40.375rem] ml-auto flex">
+      <section className="w-[55%] flex gap-[5rem] mt-[10rem] overflow-hidden ">
         {/* {renderOurSpecialFeature} */}
-        <div className="flex flex-col gap-[10rem]">
+        <div className="flex flex-col gap-[5rem]">
           <OurSpecialFeatureCard
             Icon=""
             Title="Support"
@@ -33,7 +34,7 @@ const OurSpecialFeature = () => {
             Button="Read now"
           />
         </div>
-        <div className="flex flex-col gap-[10rem]">
+        <div className="flex flex-col gap-[5rem]">
           <OurSpecialFeatureCard
             Icon=""
             Title="Counselling"
@@ -48,8 +49,10 @@ const OurSpecialFeature = () => {
           />
         </div>
       </section>
-      <section>
-        <div className="w-[20.688rem] h-[5.813rem] bg-[#695E93] flex flex-col justify-center items-center gap-1 mt-[5rem]">
+      <section className="w-[45%] relative p-4">
+        <div className="w-[20.688rem] h-[5.813rem] bg-[#695E93BF] flex flex-col justify-center items-center gap-1 mt-[5rem]"
+        >
+          <span className="absolute right-0"><img src={RightRiangleImage} alt="right triangle" /></span>
           <h1 className="text-2xl text-white font-[600]">Our Special Features</h1>
           <p className="text-2xl text-[#EBEAEB]">Made for you</p>
         </div>

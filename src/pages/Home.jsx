@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "../component/landing page/Heading";
+import Header from "../component/landing page/Header";
 import OurSpecialFeature from "../component/OurSpecialFeature";
 import SubHeading from "../component/SubHeading";
 
