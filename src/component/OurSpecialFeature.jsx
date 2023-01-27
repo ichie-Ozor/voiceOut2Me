@@ -17,7 +17,7 @@ const OurSpecialFeature = () => {
     );
   });
   return (
-    <div className="w-[91vw] h-[40.375rem] ml-auto flex">
+    <div className="w-[92vw] h-[40.375rem] ml-auto flex">
       <section className="w-[55%] flex gap-[5rem] mt-[10rem] overflow-hidden ">
         {/* {renderOurSpecialFeature} */}
         <div className="flex flex-col gap-[5rem]">

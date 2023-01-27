@@ -5,7 +5,7 @@ import Logo from "../../assets/images/logo.svg";
 const Header = () => {
   return (
     <div>
-      <header className="relative w-[83vw] m-auto h-[5.438rem] flex justify-center font-OpenSand">
+      <header className="relative w-[85vw] m-auto h-[5.438rem] flex justify-center font-OpenSand">
         <img className="absolute left-[-3rem] top-[-2rem] w-40" src={Logo} alt="logo" />
         <nav className="flex justify-between items-center leading-6 w-[93%] m-auto  mr-0">
           <h1 className="text-3xl text-[#8155BA] font-bold font-Lato">VoiceOut2me</h1>

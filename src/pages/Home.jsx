@@ -1,4 +1,5 @@
 import React from "react";
+import AboutSection from "../component/landing page/AboutSection";
 import Header from "../component/landing page/Header";
 import OurSpecialFeature from "../component/OurSpecialFeature";
 import SubHeading from "../component/SubHeading";
@@ -25,7 +26,7 @@ const Home = () => {
       {/* Our Special Features ends here */}
 
       {/* About Us starts here */}
-
+      <AboutSection />
       {/* About Us end here */}
 
       {/* Booking A Session Made Easy starts here */}

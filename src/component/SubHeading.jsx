@@ -5,7 +5,7 @@ import SubHeadIMage1 from "../assets/images/landing page/sub-head-image1.svg";
 const SubHeading = () => {
   return (
     <>
-      <section className="w-[83vw] m-auto flex justify-between mt-[4.625rem]">
+      <section className="w-[85vw] m-auto flex justify-between mt-[4.625rem]">
         <div className="get-help w-[40%] mt-[5%]">
           <h1 className="text-[52px] text-[#290C1E] font-Lato font-normal p-2">
             Voice out and be heard!
