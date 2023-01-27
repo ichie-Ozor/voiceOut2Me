@@ -1,6 +1,7 @@
 import React from "react";
-import Heading from "../component/landing page/Heading";
-import MeetACounselor from "../component/MeetACounselor";
+import AboutSection from "../component/landing page/AboutSection";
+import Header from "../component/landing page/Header";
+import OurSpecialFeature from "../component/OurSpecialFeature";
 import SubHeading from "../component/SubHeading";
 
 const Home = () => {
@@ -8,7 +9,7 @@ const Home = () => {
     <>
       {/* Header starts here */}
       <div>
-        <Heading />
+        <Header />
       </div>
       {/* Header Ends here */}
       {/* Vouice out and be heard starts here */}
@@ -19,13 +20,13 @@ const Home = () => {
 
       {/* Our Special Features starts here */}
       <div>
-        <MeetACounselor />
+        <OurSpecialFeature />
       </div>
 
       {/* Our Special Features ends here */}
 
       {/* About Us starts here */}
-
+      <AboutSection />
       {/* About Us end here */}
 
       {/* Booking A Session Made Easy starts here */}
