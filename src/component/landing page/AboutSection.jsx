@@ -8,12 +8,12 @@ const AboutSection = () => {
       <section className="w-[93%] ml-auto  h-[51.063rem] mt-[5rem] flex font-Lato">
         <div className="about-text-wrapper w-[54%] relative">
           <div>
-            <button className="bg-[#695E93] text-white py-[40px] px-[80px] rounded text-[32px] font-bold">
+            <h1 className="bg-[#695E93] text-white p-2 rounded text-[32px] font-bold w-[18.375rem] text-center">
               About Us
-            </button>
             <span className="absolute left-[-6rem]">
               <img src={LeftTriangle} alt="left triangle" />
             </span>
+            </h1>
           </div>
           <div className="flex flex-col gap-10">
             <div>
