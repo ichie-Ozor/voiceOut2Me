@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "../component/landing page/Heading";
-import MeetACounselor from "../component/MeetACounselor";
+import OurSpecialFeature from "../component/OurSpecialFeature";
 import SubHeading from "../component/SubHeading";
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
 
       {/* Our Special Features starts here */}
       <div>
-        <MeetACounselor />
+        <OurSpecialFeature />
       </div>
 
       {/* Our Special Features ends here */}
