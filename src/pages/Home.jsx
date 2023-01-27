@@ -1,5 +1,6 @@
 import React from "react";
 import AboutSection from "../component/landing page/AboutSection";
+import Footer from "../component/landing page/Footer";
 import Header from "../component/landing page/Header";
 import OurSpecialFeature from "../component/OurSpecialFeature";
 import SubHeading from "../component/SubHeading";
@@ -38,7 +39,7 @@ const Home = () => {
       {/* Contact Us ends here */}
 
       {/* Footer starts here */}
-
+      <Footer />
       {/* Footer ends here */}
     </>
   );
