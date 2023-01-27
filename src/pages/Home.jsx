@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "../component/landing page/Heading";
+import Header from "../component/landing page/Header";
 import MeetACounselor from "../component/MeetACounselor";
 import SubHeading from "../component/SubHeading";
 
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <Heading />
+        <Header />
       </div>
       <div>
         <SubHeading />

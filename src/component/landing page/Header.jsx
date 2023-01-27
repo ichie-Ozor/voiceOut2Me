@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/images/logo.svg";
 
-const Heading = () => {
+const Header = () => {
   return (
     <div>
       <header className="relative w-[83vw] m-auto h-[5.438rem] flex justify-center font-OpenSand">
@@ -24,4 +24,4 @@ const Heading = () => {
   );
 };
 
-export default Heading;
+export default Header;
