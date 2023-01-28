@@ -7,14 +7,17 @@ const SubHeading = () => {
     <>
       <section className="w-[85vw] m-auto flex justify-between mt-[4.625rem]">
         <div className="get-help w-[40%] mt-[5%]">
-          <h1 className="text-[52px] text-[#290C1E] font-Lato font-normal p-2">
+          <h1 className="text-[52px] text-[#290C1E] font-Lato font-normal ">
             Voice out and be heard!
           </h1>
-          <p className=" w-[25rem] font-Lato text-[#290C1E]">
+          <div></div>
+          <p
+            className=" w-[24rem] font-Lato text-[#290C1E] "
+          >
             We prioritize your mental wellness. Voice out, and lets help you
             move forward in the face of depression.
           </p>
-          <button className="chat-now bg-[#8155BA] text-white py-[17.5px] px-[49.58px] rounded mt-[40px]">
+          <button className="chat-now bg-[#8155BA] text-white py-[17.5px] px-[49.58px] rounded mt-[40px] hover:opacity-60">
             Get Started
           </button>
           <img className="mt-[2.563rem]" src={SubHeadIMage1} alt="" />
@@ -26,10 +29,9 @@ const SubHeading = () => {
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
           }}
-        >
-        </div>
+        ></div>
       </section>
-      <hr className="w-[83vw]  ml-[6.8rem] -mt-6 border-[0.5px] border-[#696869]"/>
+      <hr className="w-[84vw]  ml-[6.4rem] mt-[-37px] border-[0.5px] border-[#696869]" />
     </>
   );
 };
