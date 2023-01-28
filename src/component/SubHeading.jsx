@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SubHeadHero from "../assets/images/landing page/sub-head-hero-image.svg";
 import SubHeadIMage1 from "../assets/images/landing page/sub-head-image1.svg";
 
@@ -12,14 +13,14 @@ const SubHeading = () => {
           </h1>
           <div></div>
           <p
-            className=" w-[24rem] font-Lato text-[#290C1E] "
+            className=" w-[24rem] font-Lato text-[#290C1E] mb-10"
           >
             We prioritize your mental wellness. Voice out, and lets help you
             move forward in the face of depression.
           </p>
-          <button className="chat-now bg-[#8155BA] text-white py-[17.5px] px-[49.58px] rounded mt-[40px] hover:opacity-60">
+          <Link to={"/getStarted"} className="chat-now bg-[#8155BA] text-white py-[17.5px] px-[49.58px] rounded hover:opacity-60">
             Get Started
-          </button>
+          </Link>
           <img className="mt-[2.563rem]" src={SubHeadIMage1} alt="" />
         </div>
         <div

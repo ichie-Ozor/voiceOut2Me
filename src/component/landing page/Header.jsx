@@ -12,7 +12,7 @@ const Header = () => {
           <div className="flex gap-12 text-[#555455]">
             <NavLink className="" 
             >Home</NavLink>
-            <NavLink>About</NavLink>
+            <NavLink to={"sooncomingpage"}>About</NavLink>
             <NavLink>Service</NavLink>
             <NavLink>Contact</NavLink>
             <NavLink>Support</NavLink>
