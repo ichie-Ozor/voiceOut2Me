@@ -31,9 +31,9 @@ const GetStarted = () => {
           <section className="flex flex-col w-[60%] gap-2">
             <div className="flex flex-col items-center justify-center">
 
-            <Link className="py-4 w-[80%] text-white bg-[#695E93] rounded-[20px] font-bold text-[32px] text-center">Are you a couselor?</Link>
+            <Link className="py-4 w-[80%] text-white bg-[#695E93] rounded-[20px] font-bold text-[32px] text-center transition-all hover:opacity-70">Are you a couselor?</Link>
             <p className="text-2xl text-[#5A3788] font-[600]">or</p>
-            <Link to={"/loginuser"} className="py-4 w-[80%] text-[32px] text-[#1C1927] font-bold border-[1px] border-[#5A3788] rounded-[20px] text-center">User</Link>
+            <Link to={"/loginuser"} className="py-4 w-[80%] text-[32px] text-[#1C1927] font-bold border-[1px] border-[#5A3788] rounded-[20px] text-center transition-all hover:scale-105">User</Link>
             <Link to={"/"} className="text-[#694976] border-b-2 w-[8.438rem] border-[#694976] py-2 hover:opacity-60 ml-[-60%] mt-10">Back to Homepage</Link>
             </div>
           </section>
