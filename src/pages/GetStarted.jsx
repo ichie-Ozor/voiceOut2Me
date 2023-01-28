@@ -11,7 +11,7 @@ const GetStarted = () => {
         <img
           className="absolute w-[10rem]"
           src={GetStartedImage2}
-          alt="get started image 1"
+          alt="getstartedimage1"
         />
 
         <header className="flex justify-between  w-[80%] m-auto h-[5rem] items-center pt-8">
@@ -42,7 +42,7 @@ const GetStarted = () => {
         <img
           className="absolute bottom-0 right-0 w-[10rem]"
           src={GetStartedImage1}
-          alt="get started image 1"
+          alt="getstartedimage1"
         />
       </div>
     </>
