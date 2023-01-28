@@ -18,13 +18,13 @@ const SubHeading = () => {
             We prioritize your mental wellness. Voice out, and lets help you
             move forward in the face of depression.
           </p>
-          <Link to={"/getStarted"} className="chat-now bg-[#8155BA] text-white py-[17.5px] px-[49.58px] rounded hover:opacity-60">
+          <Link to={"/getStarted"} className="chat-now bg-[#8155BA] text-white py-[17.5px] px-[49.58px] rounded transition-all hover:opacity-70">
             Get Started
           </Link>
-          <img className="mt-[2.563rem]" src={SubHeadIMage1} alt="" />
+          <img className="mt-[6.563rem]" src={SubHeadIMage1} alt="subheaderimage" />
         </div>
         <div
-          className="image-container w-[53.67%] h-[38.063rem] bg-[#D9D9D9] "
+          className="image-container w-[53.67%] h-[38.063rem] bg-[#D9D9D9]"
           style={{
             background: `url(${SubHeadHero})`,
             backgroundSize: "contain",
@@ -32,7 +32,7 @@ const SubHeading = () => {
           }}
         ></div>
       </section>
-      <hr className="w-[84vw]  ml-[6.4rem] mt-[-4.5rem] border-[0.5px] border-[#696869]" />
+      <hr className="w-[84vw]  ml-[6.8rem] mt-[-0.3rem] border-[0.5px] border-[#696869]" />
     </>
   );
 };

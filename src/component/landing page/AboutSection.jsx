@@ -5,7 +5,7 @@ import LeftTriangle from "../../assets/images/landing page/left-triangle.svg";
 const AboutSection = () => {
   return (
     <>
-      <section className="w-[93%] ml-auto  mt-[5rem]  font-Lato">
+      <section className="w-[93%] ml-auto  mt-[5rem] font-Lato">
       <div className="flex  items-center ">
             <h1 className="bg-[#695E93] text-white  text-[32px] font-bold w-[18.375rem] h-[5.813rem]  flex justify-center items-center">
               About Us
@@ -19,7 +19,7 @@ const AboutSection = () => {
         <div className="about-text-wrapper w-[54%] relative">
           <div className="flex flex-col gap-10">
             <div>
-              <h1 className="text-5xl text-black font-bold z-20 overflow-hidden pt-5">
+              <h1 className="text-5xl text-black font-bold z-20 overflow-hidden pt-[3rem]">
                 We help every individuals snap out of their <span className="text-[#695E93]">depression zone</span>
               </h1>
               <p className="text-lg w-[36.375rem] pt-10">

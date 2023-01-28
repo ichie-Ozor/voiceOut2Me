@@ -34,7 +34,7 @@ const BookingASession = () => {
               a counselling session on our platform to share your burden. Sign
               In to start your booking session.
             </p>
-            <button className=" text-white py-[17.5px] px-[49.58px] rounded mt-[40px] bg-[#8155BA] hover:opacity-60">
+            <button className=" text-white py-[17.5px] px-[49.58px] rounded mt-[40px] bg-[#8155BA] transition-all hover:opacity-70">
               BOOK A SESSION
             </button>
           </div>
