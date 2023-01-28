@@ -14,17 +14,17 @@ const BookingASession = () => {
             Booking A Session Made Easy
           </h1>
         </section>
-        <section className="flex gap-12">
+        <section className=" flex flex-col lg:flex gap-12">
           <div
-            className="w-[50%] h-[33.575rem] rounded bg-white"
+            className="w-[90%] h-[20rem] lg:w-[50%] lg:h-[33.575rem] rounded bg-white"
             style={{
               background: `url(${BookingASessionImage})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
             }}
           ></div>
-          <div className="w-[48%]">
-            <div className="text-button-wrapper flex flex-col items-center mt-[25%]"></div>
+          <div className="w-[80%] lg:w-[48%]">
+            <div className="text-button-wrapper flex flex-col items-center mt-[-5rem] lg:mt-[25%]"></div>
             <p
               className="w-[23.688rem]"
               data-aos="fade-up"
