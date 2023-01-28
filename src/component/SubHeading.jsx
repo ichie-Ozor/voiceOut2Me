@@ -14,7 +14,7 @@ const SubHeading = () => {
             We prioritize your mental wellness. Voice out, and lets help you
             move forward in the face of depression.
           </p>
-          <button className="chat-now bg-[#8155BA] text-white py-[17.5px] px-[49.58px] rounded mt-[40px]">
+          <button className="chat-now bg-[#8155BA] text-white py-[17.5px] px-[49.58px] rounded mt-[40px] hover:opacity-60">
             Get Started
           </button>
           <img className="mt-[2.563rem]" src={SubHeadIMage1} alt="" />

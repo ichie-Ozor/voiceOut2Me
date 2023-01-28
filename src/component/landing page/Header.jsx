@@ -17,7 +17,7 @@ const Header = () => {
             <NavLink>Contact</NavLink>
             <NavLink>Support</NavLink>
           </div>
-          <NavLink className="  text-[#BEAFC2] py-4 px-6 mr-0 border-[1px] border-[#695E9] rounded-[20px]">Book a session</NavLink>
+          <NavLink className="  text-[#BEAFC2] py-4 px-6 mr-0 border-[1px] border-[#695E9] rounded-[20px] transition-all hover:scale-105">Book a session</NavLink>
         </nav>
       </header>
     </div>
