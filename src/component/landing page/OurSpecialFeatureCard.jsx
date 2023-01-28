@@ -1,10 +1,13 @@
 import React from "react";
+import AOS from "aos";
+AOS.init();
+
 
 const OurSpecialFeatureCard = ({ Icon, Title, Note, Button }) => {
   return (
     <>
     {/* w-[17.313] */}
-      <div className="card  h-[13.5rem] border-[2px] border-[#8155BA] font-Lato shadow-sm shadow-violet-600 ">
+      <div className="card  h-[13.5rem] border-[2px] border-[#8155BA] font-Lato  transition-transform duraion-500 hover:-translate-y-3 mt-3">
         <section className="m-2">
           <div className="icon-title-wrapper">
             <div className="icon">{Icon}</div>

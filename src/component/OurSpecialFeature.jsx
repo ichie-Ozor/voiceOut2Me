@@ -58,10 +58,15 @@ const OurSpecialFeature = () => {
         </div> */}
         </div>
         <section className="w-[48%]  p-4 mt-[2rem]">
-          <p className="w-[19.625rem]">
+          <p
+            className="w-[19.625rem]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             It’s okay not to be okay. VoiceOut2Me is out here to lead you on the
             road to recovery.
           </p>
+          <div></div>
         </section>
       </section>
     </div>

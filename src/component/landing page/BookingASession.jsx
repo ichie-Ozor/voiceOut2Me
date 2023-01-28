@@ -25,12 +25,18 @@ const BookingASession = () => {
           ></div>
           <div className="w-[48%]">
             <div className="text-button-wrapper flex flex-col items-center mt-[25%]"></div>
-            <p className="w-[23.688rem]">
+            <p
+              className="w-[23.688rem]"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               Depression isn’t a stigma, do not shy away from speaking out. Book
               a counselling session on our platform to share your burden. Sign
               In to start your booking session.
             </p>
-            <button className=" text-white py-[17.5px] px-[49.58px] rounded mt-[40px] bg-[#8155BA] hover:opacity-60">Book A SESSION</button>
+            <button className=" text-white py-[17.5px] px-[49.58px] rounded mt-[40px] bg-[#8155BA] hover:opacity-60">
+              Book A SESSION
+            </button>
           </div>
         </section>
       </div>
