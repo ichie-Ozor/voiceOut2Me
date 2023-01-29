@@ -11,25 +11,25 @@ const LogInUser = () => {
     <>
       <div className="w-full h-[40rem] relative font-Lato">
         <img
-          className="absolute w-[10rem]"
+          className="w-[2rem] absolute lg:w-[10rem]"
           src={GetStartedImage2}
           alt="getstartedimage1"
         />
 
-        <img className="h-[10rem]  ml-[62%]" src={Logo} alt="logo" />
-        <main className="flex ">
-          <section className="w-[50%] flex flex-col items-center">
+        <img className="h-[10rem] ml-[25%] sm:ml-[35%] md:ml-[40%] lg:ml-[62%]" src={Logo} alt="logo" />
+        <main className="flex flex-col lg:flex-row ">
+          <section className=" w-full lg:w-[50%] flex flex-col items-center ">
             <div className="flex flex-col justify-center  text-cente">
               <h1 className="text-2xl font-[600] text-violet-700 text-center">
                 Welcome Back
               </h1>
-              <p className=" p-2 w-[23.875rem]  ml-8">
+              <p className=" p-2 text-center lg:text-left w-[15rem] sm:w-[25rem] lg:ml-8 my-[1rem]">
                 We have great features awaiting you on our platform, sign in now
                 to access them all
               </p>
             </div>
             <div
-              className="w-[36.75rem] h-[44.313rem]"
+              className="w-[20rem] h-[22rem] lg:w-[25.75rem] lg:h-[44.313rem] ml-[10%] lg:ml-0"
               style={{
                 background: `url(${UserLogInImage})`,
                 backgroundRepeat: "no-repeat",
@@ -38,27 +38,29 @@ const LogInUser = () => {
             ></div>
           </section>
 
-          <section className="w-[50%]">
+          <section className="w-full lg:w-[50%]">
             <div className="flex flex-col items-start gap-5">
-              <h1>Sign in into your account</h1>
-              <button className="flex gap-8 border-[1px] border-violet-600 w-[23.625rem] justify-center items-center py-4 rounded ml-[5rem]">
+              <h1 className="ml-[5%] lg:ml-0">Sign in into your account</h1>
+              <button className="flex gap-8 border-[1px] border-violet-600 w-[15rem] sm:w-[20rem] ml-[17%] sm:ml-[25%] md:ml-[30%] lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[5rem]">
                 <img src={GoogleLogo} alt="googleLogo" />
                 <span>Sign in with Google</span>
               </button>
-              <div className="flex items-center mb-10">
-                <span className="w-[11.875rem] h-[1px] bg-black"></span>
-                <p className="px-2 text-[#1E122D]"> OR LOGIN WITH EMAIL</p>
-                <span className="w-[11.875rem] h-[1px] bg-black"></span>
+              <div className="flex items-center mb-10 ml-[-4%] sm:ml-[2%]   lg:ml-0">
+                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[10rem] h-[1px] bg-black ml-[2rem]"></span>
+                <p className="px-2 text-[#1E122D] "> OR LOGIN WITH EMAIL</p>
+                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[9.875rem] h-[1px] bg-black"></span>
               </div>
             </div>
 
-            <form action="#">
+            <form className=" w-full lg:w-[90%]" action="#">
+              <section className="w-[90%] lg:w-full m-auto">
+
               <div className="flex relative mb-[2rem]">
                 <label className="absolute" htmlFor="userName">
                   Username:
                 </label>
                 <input
-                  className="border-b-[2px] pl-[5rem] pt-4 w-[80%] border-black"
+                  className="border-b-[2px] pl-[5rem] pt-4 w-[95%] border-black"
                   type="text"
                   name="userName"
                   id="userName"
@@ -70,7 +72,7 @@ const LogInUser = () => {
                   Password:
                 </label>
                 <input
-                  className="border-b-[2px] px-[5rem] pt-4 w-[80%] border-black"
+                  className="border-b-[2px] px-[5rem] pt-4 w-[95%] border-black"
                   type="password"
                   name="password"
                   id="password"
@@ -81,7 +83,7 @@ const LogInUser = () => {
               </div>
               <div>
                 <div className="flex justify-between w-[80%] mt-5">
-                  <label className="" htmlFor="keepMeLogIn">
+                  <label className="text-[12px] sm:text-base" htmlFor="keepMeLogIn">
                     <span>
                       <input
                       className="mr-5"
@@ -92,12 +94,13 @@ const LogInUser = () => {
                     </span>
                     Keep me logged in
                   </label>
-                  <p>Forget password?</p>
+                  <p className="text-[12px] sm:text-base">Forget password?</p>
                 </div>
               </div>
-              <button className="px-[9.875rem] py-5 bg-[#534B75] text-white ml-[15%] rounded mt-[5rem] font-medium transition-all hover:opacity-70" type="submit">Log in</button>
+              </section>
+              <button className="px-[35%] ml-[8%] lg:px-[9.875rem] py-5 bg-[#534B75] text-white lg:ml-[15%] rounded mt-[5rem] font-medium transition-all hover:opacity-70" type="submit">Log in</button>
             </form>
-            <p className="text-[#414041] mt-[5rem]">Don’t have an account?<span className="text-[#938AB4]"><Link>Create Account</Link></span> </p>
+            <p className="text-[#414041] my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">Don’t have an account?<span className="text-[#938AB4]"><Link>Create Account</Link></span> </p>
           </section>
         </main>
       </div>
