@@ -33,7 +33,7 @@ const Footer = () => {
           <div>
             <h1 className="text-xl text-white font-medium ">Subscribe our Newsletter</h1>
           </div >
-          <p className="text-white/50">Provide a reminder to learn more about new content.</p>
+          <p className="text-white/50 mb-5">Provide a reminder to learn more about new content.</p>
           <div className="flex flex-col gap-2 w-[80%] lg:flex lg:gap-2  lg:items-cente">
           <label className="text-white" htmlFor="email">Email:</label>
           <input className="p-2 rounded" type="text" placeholder="Enter Email" name="email"/>

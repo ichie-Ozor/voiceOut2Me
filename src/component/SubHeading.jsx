@@ -24,7 +24,7 @@ const SubHeading = () => {
           <img className=" hidden lg:flex  md:mt-[2rem] md:w-[10rem] xl:w-[22rem] xl:mt-[5rem]" src={SubHeadIMage1} alt="subheaderimage" />
         </div>
         <div
-          className="h-[20rem] w-[90%] sm:w-[12rem] sm:h-[12rem] md:w-[40%] lg:w-[53.67%] lg:h-[38.063rem] bg-[#D9D9D9] sm:ml-[25%] md:ml-0 sm:mt-[-3rem] lg:mt-0"
+          className="h-[20rem] w-[90%] sm:w-[12rem] sm:h-[12rem] md:w-[40%] lg:w-[53.67%] lg:h-[38.063rem] bg-[#D9D9D9] ml-4 sm:ml-[25%] md:ml-0 sm:mt-[-3rem] lg:mt-0"
           style={{
             background: `url(${SubHeadHero})`,
             backgroundSize: "contain",
