@@ -32,7 +32,7 @@ const SubHeading = () => {
           }}
         ></div>
       </section>
-      <hr className="hidden lg:flex w-[84vw]  ml-[6.8rem] md:mt-[-10.3rem] border-[0.5px] border-[#696869] lg:mt-[-10.1rem] xl:mt-[-0.5rem]" />
+      <hr className="hidden lg:flex w-[88vw]  ml-[6.3rem] md:mt-[-10.3rem] border-[0.5px] border-[#696869] lg:mt-[-10.1rem]  xl:mt-[-0.5rem] min-[1366px]:mt-5" />
     </>
   );
 };
