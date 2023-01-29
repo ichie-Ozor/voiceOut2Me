@@ -26,7 +26,7 @@ const BookingASession = () => {
           <div className="w-[90%] lg:w-[48%]">
             <div className="text-button-wrapper flex flex-col items-center mt-[-5rem] sm:mt-[-25%] min-[425px]:mt-0 min-[700px]:mt-[-2rem] md:mt-0 lg:mt-[25%]"></div>
             <p
-              className="sm:w-[30rem] lg:w-[23.688rem] sm:ml-[-6rem] md:ml-0"
+              className="sm:w-[36rem] md:w-[30rem] lg:w-[23.688rem] sm:ml-[-6.5rem] md:ml-0"
               data-aos="fade-up"
               data-aos-duration="1000"
             >

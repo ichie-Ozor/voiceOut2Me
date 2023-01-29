@@ -59,7 +59,7 @@ const OurSpecialFeature = () => {
         </div>
         <section className="w-[48%]  md:w-[80%] lg:w-[38%] p-4 mt-[2rem]">
           <p
-            className=" w-[16rem] text-center sm:w-[20rem] sm:ml-[30%] md:ml-0 md:text-left md:w-[30rem] lg:w-[19.625rem]"
+            className=" w-[16rem] text-center sm:w-[30rem] sm:ml-[20%] md:ml-0 md:text-left md:w-[30rem] lg:w-[19.625rem]"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
