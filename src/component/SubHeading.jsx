@@ -6,9 +6,9 @@ import SubHeadIMage1 from "../assets/images/landing page/sub-head-image1.svg";
 const SubHeading = () => {
   return (
     <>
-      <section className="flex flex-col-reverse md:flex-row w-[85vw] lg:w-[90%] xl:w-[85vw] m-auto  justify-between mt-[4.625rem]">
+      <section className="flex flex-col-reverse md:flex-row w-[85vw] lg:w-[92%] xl:w-[85vw] m-auto  justify-between mt-[4.625rem] ">
         <div className="flex flex-col items-center md:flex-none md:items-start  md:w-[40%] mt-[-5%] lg:mt-[5%]">
-          <h1 className="text-4xl leading-[3rem] lg:text-[52px] lg:leading-[4rem] text-[#290C1E] font-Lato font-normal ">
+          <h1 className="text-4xl leading-[3rem] lg:text-[52px] lg:leading-[4rem] text-[#290C1E] font-Lato font-normal sm:mt-[3rem] md:mt-0">
             Voice out and be heard!
           </h1>
           <div></div>
@@ -24,7 +24,7 @@ const SubHeading = () => {
           <img className=" hidden lg:flex  md:mt-[2rem] md:w-[10rem] xl:w-[22rem] xl:mt-[5rem]" src={SubHeadIMage1} alt="subheaderimage" />
         </div>
         <div
-          className="h-[20rem] w-[90%] md:w-[40%] lg:w-[53.67%] lg:h-[38.063rem] bg-[#D9D9D9]"
+          className="h-[20rem] w-[90%] sm:h-[12rem] md:w-[40%] lg:w-[53.67%] lg:h-[38.063rem] bg-[#D9D9D9] sm:ml-[25%] md:ml-0 sm:mt-[-3rem] lg:mt-0"
           style={{
             background: `url(${SubHeadHero})`,
             backgroundSize: "contain",
@@ -32,7 +32,7 @@ const SubHeading = () => {
           }}
         ></div>
       </section>
-      <hr className="hidden lg:flex w-[84vw]  ml-[6.8rem] md:mt-[-10.3rem] border-[0.5px] border-[#696869] xl:mt-[-0.5rem]" />
+      <hr className="hidden lg:flex w-[84vw]  ml-[6.8rem] md:mt-[-10.3rem] border-[0.5px] border-[#696869] lg:mt-[-10.1rem] xl:mt-[-0.5rem]" />
     </>
   );
 };

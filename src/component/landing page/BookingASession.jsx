@@ -5,16 +5,16 @@ import BookingASessionImage from "../../assets/images/landing page/booking-a-ses
 const BookingASession = () => {
   return (
     <>
-      <div className="w-[93%] ml-auto font-Lato">
-        <section className=" header-wrapper w-[21.688rem] h-[5.813rem] bg-[#695E93BF] flex flex-col justify-center items-center gap-1 mt-[2rem] mr-0 ml-[53%]">
+      <div className="w-[93%] ml-auto font-Lato lg:mt-[-10rem] xl:mt-0">
+        <section className=" header-wrapper w-[16rem] lg:w-[21.688rem] h-[5.813rem] bg-[#695E93BF] flex flex-col justify-center items-center gap-1 mt-[2rem] mr-0 lg:ml-[53%]">
           <span className="absolute right-0">
-            <img src={RightRiangleImage} alt="right triangle" />
+            <img className="w-[1rem] lg:w-[2rem]" src={RightRiangleImage} alt="right triangle" />
           </span>
-          <h1 className="text-2xl text-white font-[600]">
+          <h1 className=" text-center lg:text-left text-2xl text-white font-[600]">
             Booking A Session Made Easy
           </h1>
         </section>
-        <section className=" flex flex-col lg:flex gap-12">
+        <section className=" flex flex-col lg:flex-row gap-12 ">
           <div
             className="w-[90%] h-[20rem] lg:w-[50%] lg:h-[33.575rem] rounded bg-white"
             style={{
@@ -23,10 +23,10 @@ const BookingASession = () => {
               backgroundSize: "contain",
             }}
           ></div>
-          <div className="w-[80%] lg:w-[48%]">
-            <div className="text-button-wrapper flex flex-col items-center mt-[-5rem] lg:mt-[25%]"></div>
+          <div className="w-[90%] lg:w-[48%]">
+            <div className="text-button-wrapper flex flex-col items-center mt-[-5rem] sm:mt-0 lg:mt-[25%]"></div>
             <p
-              className="w-[23.688rem]"
+              className="lg:w-[23.688rem]"
               data-aos="fade-up"
               data-aos-duration="1000"
             >

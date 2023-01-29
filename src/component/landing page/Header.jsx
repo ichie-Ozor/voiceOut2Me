@@ -8,12 +8,12 @@ const Header = () => {
     <div>
       <header className="relative w-[100vw] lg:w-[90vw] xl:w-[85vw] m-auto h-[5.438rem] flex justify-center font-OpenSand">
         <img
-          className="absolute left-[-3rem] top-[-2rem] w-40"
+          className="absolute left-[-3rem] top-[-2rem] w-40 "
           src={Logo}
           alt="logo"
         />
         <nav className="flex justify-between items-center leading-6 w-[93%] m-auto  mr-0">
-          <h1 className=" ml-[4rem] lg:ml-[2rem] text-lg md:text-3xl text-[#8155BA] font-bold font-Lato">
+          <h1 className=" ml-[4rem] sm:ml-[3rem] lg:ml-[2rem] text-lg md:text-3xl text-[#8155BA] font-bold font-Lato">
             VoiceOut2me
           </h1>
           <div className="flex lg:hidden ml-[10%]">
