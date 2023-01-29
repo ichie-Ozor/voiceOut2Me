@@ -17,16 +17,16 @@ const OurSpecialFeature = () => {
     );
   });
   return (
-    <div className="w-[92vw] ml-auto ">
-      <div className=" header-wrapper w-[20.688rem] h-[5.813rem] bg-[#695E93BF] flex flex-col justify-center items-center gap-1 mt-[5rem] mr-0 ml-[53%]">
+    <div className="w-[92vw] ml-auto lg:w-[95vw] xl:w-[92vw]">
+      <div className=" header-wrapper w-[15rem] md:w-[20.688rem] md:h-[5.813rem] bg-[#695E93BF] flex flex-col justify-center items-center gap-1 mt-[5rem] lg:mr-0 md:ml-[45%] lg:ml-[60%]">
         <span className="absolute right-0">
-          <img src={RightRiangleImage} alt="right triangle" />
+          <img className="w-[1rem] lg:w-[2rem]" src={RightRiangleImage} alt="right triangle" />
         </span>
         <h1 className="text-2xl text-white font-[600]">Our Special Features</h1>
         <p className="text-2xl text-[#EBEAEB]">Made for you</p>
       </div>
-      <section className="flex gap-4">
-        <div className="w-[52%] grid grid-cols-2 gap-[5rem] overflow-hidden ml-0">
+      <section className=" flex flex-col-reverse md:flex lg:flex-row gap-4">
+        <div className="w-[92%] grid gap-5 grid-cols-1 sm:w-[50%] md:w-[90%] lg:w-[60%] xl:w-[52%] md:grid md:grid-cols-2 md:gap-[2rem] lg:gap-[2rem] overflow-hidden ml-0 sm:ml-[20%] md:ml-0">
           {renderOurSpecialFeature}
           {/* <div className="flex flex-col gap-[5rem]">
           <OurSpecialFeatureCard
@@ -57,9 +57,9 @@ const OurSpecialFeature = () => {
           />
         </div> */}
         </div>
-        <section className="w-[48%]  p-4 mt-[2rem]">
+        <section className="w-[48%]  md:w-[80%] lg:w-[38%] p-4 mt-[2rem]">
           <p
-            className="w-[19.625rem]"
+            className=" w-[16rem] text-center sm:w-[30rem] sm:ml-[20%] md:ml-0 md:text-left md:w-[30rem] lg:w-[19.625rem]"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
