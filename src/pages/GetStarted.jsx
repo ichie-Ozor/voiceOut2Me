@@ -14,7 +14,7 @@ const GetStarted = () => {
           alt="getstartedimage1"
         />
 
-        <header className="w-[80%] flex justify-between  m-auto h-[5rem] items-center pt-8 mb-[2rem]">
+        <header className="w-[80%] flex justify-between  m-auto h-[5rem] items-center lg:pt-8 mb-[2rem]">
           <img className=" ml-[-3rem] lg:ml-0 h-[8rem] sm:h-[10rem] " src={Logo} alt="logo" />
           <h1 className=" text-lg  md:text-[32px] md:w-[10.25ren] border-b-2 border-[#696869]">Get Started</h1>
         </header>
