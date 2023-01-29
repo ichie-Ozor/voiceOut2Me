@@ -14,9 +14,9 @@ const BookingASession = () => {
             Booking A Session Made Easy
           </h1>
         </section>
-        <section className=" flex flex-col lg:flex-row gap-12 ">
+        <section className=" flex flex-col lg:flex-row gap-12 mt-[3rem] lg:mt-0 sm:ml-[20%] md:ml-0">
           <div
-            className="w-[90%] h-[20rem] lg:w-[50%] lg:h-[33.575rem] rounded bg-white"
+            className="w-[90%] h-[20rem] sm:w-[60%] md:ml-[19%] lg:ml-0 lg:w-[50%] lg:h-[33.575rem] rounded bg-white"
             style={{
               background: `url(${BookingASessionImage})`,
               backgroundRepeat: "no-repeat",
@@ -24,9 +24,9 @@ const BookingASession = () => {
             }}
           ></div>
           <div className="w-[90%] lg:w-[48%]">
-            <div className="text-button-wrapper flex flex-col items-center mt-[-5rem] sm:mt-0 lg:mt-[25%]"></div>
+            <div className="text-button-wrapper flex flex-col items-center mt-[-5rem] sm:mt-[-25%] md:mt-0 lg:mt-[25%]"></div>
             <p
-              className="lg:w-[23.688rem]"
+              className="sm:w-[30rem] lg:w-[23.688rem] sm:ml-[-6rem] md:ml-0"
               data-aos="fade-up"
               data-aos-duration="1000"
             >

@@ -17,7 +17,7 @@ const AboutSection = () => {
 <section className="flex flex-col-reverse lg:flex-row lg:mt-[-9rem]">
 
         <div className="w-[93%] about-text-wrapper lg:w-[54%] relative ">
-          <div className="flex flex-col gap-10 md:w-[35rem] lg:w-[]">
+          <div className="flex flex-col gap-10 md:w-[35rem] lg:w-[40rem]">
             <div>
               <h1 className=" text-xl sm:text-[22px] md:text-2xl  lg:text-[40px] lg:leading-[3rem]  text-black font-bold  overflow-hidden pt-[3rem]">
                 We help every individuals snap out of their <span className="text-[#695E93]">depression zone</span>
@@ -42,7 +42,7 @@ const AboutSection = () => {
         </div>
 
         <div
-          className="about-hero-wrapper ml-[10%] w-[90%] h-[20rem]  sm:ml-[25%] md:ml-[20%] lg:ml-0 md:w-[50%]  lg:w-[48%]  lg:h-[45rem] xl:w-[46%] mt-[-5rem]"
+          className="about-hero-wrapper ml-[10%] w-[90%] h-[20rem]  sm:ml-[25%] md:ml-[28%] lg:ml-0 sm:w-[50%]   lg:w-[48%]  lg:h-[45rem] xl:w-[46%] mt-[-5rem]"
           style={{
             background: `url(${AboutHeroImage})`,
             backgroundRepeat: "no-repeat",
