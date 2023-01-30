@@ -16,7 +16,7 @@ const LogInUser = () => {
           alt="getstartedimage1"
         />
 
-        <img className="h-[10rem] ml-[25%] sm:ml-[35%] md:ml-[40%] lg:ml-[62%]" src={Logo} alt="logo" />
+        <img className="h-[10rem] ml-[25%] sm:ml-[35%] md:ml-[40%] lg:ml-[66%] xl:ml-[68%] min-[425px]:ml-[30%] min-[570px]:ml-[35%]" src={Logo} alt="logo" />
         <main className="flex flex-col lg:flex-row ">
           <section className=" w-full lg:w-[50%] flex flex-col items-center ">
             <div className="flex flex-col justify-center  text-cente">
@@ -38,21 +38,21 @@ const LogInUser = () => {
             ></div>
           </section>
 
-          <section className="w-full lg:w-[50%]">
+          <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-0">
             <div className="flex flex-col items-start gap-5">
               <h1 className="ml-[5%] lg:ml-0">Sign in into your account</h1>
-              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[10%] sm:ml-[25%] md:ml-[30%] min-[425px]:ml-[18%] min-[375px]:ml-[15%] min-[570px]:ml-[27%]  lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[5%] xl:ml-[18%]">
+              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[8%] sm:ml-[25%] md:w-[25rem] md:ml-[22%] min-[425px]:ml-[18%] min-[375px]:ml-[12%] min-[570px]:ml-[27%]  lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[10%] xl:ml-[22%]">
                 <img src={GoogleLogo} alt="googleLogo" />
                 <span>Sign in with Google</span>
               </button>
-              <div className="flex items-center mb-10 ml-[-4%] sm:ml-[2%]   lg:ml-[-2rem] my-[2rem] min-[425px]:ml-[-10px] min-[540px]:ml-[0rem]">
-                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[8rem] xl:w-[13.5rem] min-[1366px]:w-[12rem] min-[425px]:w-[5.5rem]  min-[375px]:w-[4rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black ml-[2rem]"></span>
-                <p className="px-2 text-[#1E122D] "> OR LOGIN WITH EMAIL</p>
-                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[8rem] xl:w-[13.5rem] min-[1366px]:w-[12rem]  min-[425px]:w-[5.5rem] min-[375px]:w-[4rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black"></span>
+              <div className="flex items-center mb-10 ml-[-6%] sm:ml-[2%] md:ml-[5px]  lg:ml-[-0.5rem] my-[2rem] min-[425px]:ml-[-10px] min-[540px]:ml-[0rem] min-[375px]:ml-[-10px]">
+                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[7.5rem] xl:w-[13.5rem] min-[1366px]:w-[12rem] min-[425px]:w-[5.5rem]  min-[375px]:w-[4rem] min-[1440px]:ml-[2.5rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black ml-[2rem]"></span>
+                <p className="px-2 text-[#1E122D] "> OR LOG IN WITH EMAIL</p>
+                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[7.5rem] xl:w-[13.5rem] min-[1366px]:w-[12rem]  min-[425px]:w-[5.5rem] min-[375px]:w-[4rem] min-[1440px]:ml-[2.5rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black"></span>
               </div>
             </div>
 
-            <form className=" w-full lg:w-[90%]" action="#">
+            <form className=" w-full lg:w-[90%] m-auto" action="#">
               <section className="w-[90%] lg:w-full m-auto">
 
               <div className="flex relative mb-[2rem]">
@@ -77,7 +77,7 @@ const LogInUser = () => {
                   name="password"
                   id="password"
                 />
-                <span className="absolute left-[88%] top-[25%] cursor-pointer md:left-[90%]">
+                <span className="absolute left-[88%] top-[25%] cursor-pointer md:left-[90%] min-[570px]:left-[90.5%]">
                   <img src={EyeLogo} alt="eyelogo" />
                 </span>
               </div>
