@@ -11,7 +11,7 @@ const Home = () => {
     <>
       {/* Header starts here */}
       <div>
-        <Header />
+        {/* <Header /> */}
       </div>
       {/* Header Ends here */}
       {/* Vouice out and be heard starts here */}

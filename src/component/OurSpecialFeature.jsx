@@ -12,6 +12,7 @@ const OurSpecialFeature = () => {
           Title={feature.title}
           Note={feature.note}
           Button={feature.button}
+          LinkPath={feature.link}
         />
       </div>
     );

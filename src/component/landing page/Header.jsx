@@ -20,13 +20,13 @@ const Header = () => {
             <HamburgerMain />
           </div>
           <div className="hidden lg:flex lg:gap-[1.5rem] text-[#555455]">
-            <NavLink>Home</NavLink>
-            <NavLink to={"sooncomingpage"}>About</NavLink>
-            <NavLink>Service</NavLink>
-            <NavLink>Contact</NavLink>
-            <NavLink>Support</NavLink>
+            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"about"}>About</NavLink>
+            <NavLink to={"service"}>Service</NavLink>
+            <NavLink to={"contact"}>Contact</NavLink>
+            <NavLink to={"support"}>Support</NavLink>
           </div>
-          <NavLink className=" hidden lg:flex text-[#BEAFC2] lg:py-2 lg:px-6 mr-0 border-[1px] border-[#695E9] rounded-[20px] transition-all hover:scale-105">
+          <NavLink to={"loginuser"} className=" hidden lg:flex text-[#BEAFC2] lg:py-2 lg:px-6 mr-0 border-[1px] border-[#695E9] rounded-[20px] transition-all hover:scale-105">
             Book a session
           </NavLink>
         </nav>

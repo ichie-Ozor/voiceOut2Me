@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <h1 className="text-xl text-white font-medium">Support</h1>
           </div >
-          <Link className="text-sm text-white/50">Contact us</Link>
+          <Link to={"contact"} className="text-sm text-white/50">Contact us</Link>
           <Link className="text-sm text-white/50">Forums</Link>
           <Link className="text-sm text-white/50">Community</Link>
         </div>
@@ -25,7 +25,7 @@ const Footer = () => {
           <div>
             <h1 className="text-xl text-white font-medium">Company</h1>
           </div >
-          <Link className="text-sm text-white/50">About us</Link>
+          <Link to={"about"} className="text-sm text-white/50">About us</Link>
           <Link className="text-sm text-white/50">Blog</Link>
           <Link className="text-sm text-white/50">Careers</Link>
         </div>

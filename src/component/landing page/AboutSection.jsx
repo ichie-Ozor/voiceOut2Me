@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AboutHeroImage from "../../assets/images/landing page/about-us-hero-image.svg";
 import LeftTriangle from "../../assets/images/landing page/left-triangle.svg";
 
@@ -36,7 +37,7 @@ const AboutSection = () => {
                 people by providing the Professional Pschotherapist to serve
                 their needs.
               </p>
-              <button className="border-[1px] border-black rounded-lg py-2 px-4 mt-10 transition-all  hover:scale-105">READ MORE</button>
+              <button className="border-[1px] border-black rounded-lg py-2 px-4 mt-10 transition-all  hover:scale-105"><Link to={"about"}>READ MORE</Link></button>
             </div>
           </div>
         </div>
