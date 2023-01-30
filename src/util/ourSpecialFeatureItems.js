@@ -5,7 +5,7 @@ const ourSpecialFeature = [
     title: "Support",
     note: "We have 24/7 live chat to attend to your needs.",
     button: "Chat Now",
-    link: "/loginuser",
+    link: "/getstarted",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const ourSpecialFeature = [
     title: "Counselling",
     note: "Book a professional psychotherapist/ counsellor from the platform ",
     button: "Book Session",
-    link: "/loginuser",
+    link: "/getstarted",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const ourSpecialFeature = [
     title: "Community",
     note: "Never suffer in silence, join an active community to boost your mood",
     button: "Join now",
-    link: "/loginuser",
+    link: "/getstarted",
   },
 ];
 

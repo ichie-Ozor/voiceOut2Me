@@ -26,7 +26,7 @@ const Header = () => {
             <NavLink to={"contact"}>Contact</NavLink>
             <NavLink to={"support"}>Support</NavLink>
           </div>
-          <NavLink to={"loginuser"} className=" hidden lg:flex text-[#BEAFC2] lg:py-2 lg:px-6 mr-0 border-[1px] border-[#695E9] rounded-[20px] transition-all hover:scale-105">
+          <NavLink to={"getstarted"} className=" hidden lg:flex text-[#BEAFC2] lg:py-2 lg:px-6 mr-0 border-[1px] border-[#695E9] rounded-[20px] transition-all hover:scale-105">
             Book a session
           </NavLink>
         </nav>
