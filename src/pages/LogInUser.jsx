@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const LogInUser = () => {
   return (
     <>
-      <div className="w-full h-[40rem] relative font-Lato">
+      <div className="w-full h-full relative font-Lato">
         <img
           className="w-[2rem] absolute lg:w-[10rem]"
           src={GetStartedImage2}
@@ -29,7 +29,7 @@ const LogInUser = () => {
               </p>
             </div>
             <div
-              className="w-[20rem] h-[22rem] lg:w-[25.75rem] lg:h-[44.313rem] ml-[10%] lg:ml-0"
+              className="w-[15rem] h-[18rem] lg:w-[25.75rem] lg:h-[44.313rem] ml-[2%] lg:ml-0"
               style={{
                 background: `url(${UserLogInImage})`,
                 backgroundRepeat: "no-repeat",
@@ -41,14 +41,14 @@ const LogInUser = () => {
           <section className="w-full lg:w-[50%]">
             <div className="flex flex-col items-start gap-5">
               <h1 className="ml-[5%] lg:ml-0">Sign in into your account</h1>
-              <button className="flex gap-8 border-[1px] border-violet-600 w-[15rem] sm:w-[20rem] ml-[17%] sm:ml-[25%] md:ml-[30%] lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[5rem]">
+              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[10%] sm:ml-[25%] md:ml-[30%] lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[5%] xl:ml-[18%]">
                 <img src={GoogleLogo} alt="googleLogo" />
                 <span>Sign in with Google</span>
               </button>
-              <div className="flex items-center mb-10 ml-[-4%] sm:ml-[2%]   lg:ml-0">
-                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[10rem] h-[1px] bg-black ml-[2rem]"></span>
+              <div className="flex items-center mb-10 ml-[-4%] sm:ml-[2%]   lg:ml-[-2rem] my-[2rem]">
+                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[8rem] xl:w-[13.5rem] h-[1px] bg-black ml-[2rem]"></span>
                 <p className="px-2 text-[#1E122D] "> OR LOGIN WITH EMAIL</p>
-                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[9.875rem] h-[1px] bg-black"></span>
+                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[8rem] xl:w-[13.5rem] h-[1px] bg-black"></span>
               </div>
             </div>
 
@@ -77,7 +77,7 @@ const LogInUser = () => {
                   name="password"
                   id="password"
                 />
-                <span className="absolute left-[75%] top-[25%] cursor-pointer">
+                <span className="absolute left-[88%] top-[25%] cursor-pointer md:left-[92%]">
                   <img src={EyeLogo} alt="eyelogo" />
                 </span>
               </div>
@@ -98,9 +98,9 @@ const LogInUser = () => {
                 </div>
               </div>
               </section>
-              <button className="px-[35%] ml-[8%] lg:px-[9.875rem] py-5 bg-[#534B75] text-white lg:ml-[15%] rounded mt-[5rem] font-medium transition-all hover:opacity-70" type="submit">Log in</button>
+              <button className="px-[35%] ml-[8%] lg:px-[9.875rem] py-5 bg-[#534B75] text-white lg:ml-[10%] xl:ml-[23%] rounded mt-[5rem] font-medium transition-all hover:opacity-70" type="submit">Log in</button>
             </form>
-            <p className="text-[#414041] my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">Don’t have an account?<span className="text-[#938AB4]"><Link>Create Account</Link></span> </p>
+            <p className="text-[#414041] mt-[2rem] mb-[5rem] lg:my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">Don’t have an account?<span className="text-[#938AB4]"><Link>Create Account</Link></span> </p>
           </section>
         </main>
       </div>

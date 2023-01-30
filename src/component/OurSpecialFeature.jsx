@@ -27,7 +27,7 @@ const OurSpecialFeature = () => {
         <p className="text-2xl text-[#EBEAEB]">Made for you</p>
       </div>
       <section className=" flex flex-col-reverse md:flex lg:flex-row gap-4">
-        <div className="w-[92%] grid gap-5 grid-cols-1 sm:w-[50%] md:w-[90%] lg:w-[60%] xl:w-[52%] md:grid md:grid-cols-2 md:gap-[2rem] lg:gap-[2rem] overflow-hidden ml-0 sm:ml-[20%] md:ml-0">
+        <div className="w-[92%] grid gap-5 grid-cols-1 sm:w-[50%] md:w-[90%] lg:w-[60%] xl:w-[52%] md:grid md:grid-cols-2 md:gap-x-[3rem] lg:gap-x-[3rem] overflow-hidden ml-0 sm:ml-[20%] md:ml-0">
           {renderOurSpecialFeature}
         </div>
         <section className="w-[48%]  md:w-[80%] lg:w-[38%] p-4 mt-[2rem]">

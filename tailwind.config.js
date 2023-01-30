@@ -16,7 +16,9 @@ module.exports = {
         'sm': '576px',
     },
 colors:{
-  // 'secondary':"#290C1E"
+},
+boxShadow: {
+  'primary': '2px 4px 4px rgba(129, 85, 186, 0.25)',
 }
   },
   plugins: [],

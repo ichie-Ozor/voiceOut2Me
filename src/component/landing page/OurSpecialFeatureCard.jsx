@@ -6,8 +6,7 @@ AOS.init();
 const OurSpecialFeatureCard = ({ Icon, Title, Note, Button,LinkPath }) => {
   return (
     <>
-      {/* w-[17.313] */}
-      <div className="card  h-[13.5rem] border-[2px] border-[#8155BA] font-Lato  transition-transform duraion-500 hover:-translate-y-3 mt-3">
+      <div className="card  h-[13.5rem] border-[2px] border-[#8155BA] font-Lato shadow-primary transition-transform duraion-500 hover:-translate-y-3 my-3">
         <section className="m-2">
           <div className="icon-title-wrapper">
             <div className="icon">{Icon}</div>
