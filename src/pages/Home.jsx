@@ -35,7 +35,6 @@ const Home = () => {
       {/* Booking A Session Made Easy ends here */}
 
       {/* Contact Us starts here */}
-
       {/* Contact Us ends here */}
 
       {/* Footer starts here */}
