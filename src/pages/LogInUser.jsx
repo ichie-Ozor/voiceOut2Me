@@ -41,14 +41,14 @@ const LogInUser = () => {
           <section className="w-full lg:w-[50%]">
             <div className="flex flex-col items-start gap-5">
               <h1 className="ml-[5%] lg:ml-0">Sign in into your account</h1>
-              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[10%] sm:ml-[25%] md:ml-[30%] min-[425px]:ml-[18%] min-[375px]:ml-[15%] min-[570px]:ml-[27%] lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[5%] xl:ml-[18%]">
+              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[10%] sm:ml-[25%] md:ml-[30%] min-[425px]:ml-[18%] min-[375px]:ml-[15%] min-[570px]:ml-[27%]  lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[5%] xl:ml-[18%]">
                 <img src={GoogleLogo} alt="googleLogo" />
                 <span>Sign in with Google</span>
               </button>
               <div className="flex items-center mb-10 ml-[-4%] sm:ml-[2%]   lg:ml-[-2rem] my-[2rem] min-[425px]:ml-[-10px] min-[540px]:ml-[0rem]">
-                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[8rem] xl:w-[13.5rem] min-[1366px]:w-[12rem] min-[425px]:w-[5.5rem]  min-[375px]:w-[4rem] min-[540px]:w-[9.4rem]  h-[1px] bg-black ml-[2rem]"></span>
+                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[8rem] xl:w-[13.5rem] min-[1366px]:w-[12rem] min-[425px]:w-[5.5rem]  min-[375px]:w-[4rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black ml-[2rem]"></span>
                 <p className="px-2 text-[#1E122D] "> OR LOGIN WITH EMAIL</p>
-                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[8rem] xl:w-[13.5rem] min-[1366px]:w-[12rem]  min-[425px]:w-[5.5rem] min-[375px]:w-[4rem] min-[540px]:w-[9.4rem]  h-[1px] bg-black"></span>
+                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[8rem] xl:w-[13.5rem] min-[1366px]:w-[12rem]  min-[425px]:w-[5.5rem] min-[375px]:w-[4rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black"></span>
               </div>
             </div>
 
