@@ -2,7 +2,6 @@ import React from "react";
 import AboutSection from "../component/landing page/AboutSection";
 import BookingASession from "../component/landing page/BookingASession";
 import Footer from "../component/landing page/Footer";
-import Header from "../component/landing page/Header";
 import OurSpecialFeature from "../component/OurSpecialFeature";
 import SubHeading from "../component/SubHeading";
 
@@ -11,7 +10,6 @@ const Home = () => {
     <>
       {/* Header starts here */}
       <div>
-        {/* <Header /> */}
       </div>
       {/* Header Ends here */}
       {/* Vouice out and be heard starts here */}
