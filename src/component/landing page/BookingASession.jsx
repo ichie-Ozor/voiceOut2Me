@@ -1,6 +1,7 @@
 import React from "react";
 import RightRiangleImage from "../../assets/images/landing page/right-triangle.svg";
 import BookingASessionImage from "../../assets/images/landing page/booking-a-session-image.svg";
+import { Link } from "react-router-dom";
 
 const BookingASession = () => {
   return (
@@ -35,7 +36,7 @@ const BookingASession = () => {
               In to start your booking session.
             </p>
             <button className=" text-white py-[17.5px] px-[49.58px] rounded mt-[40px] bg-[#8155BA] transition-all hover:opacity-70">
-              BOOK A SESSION
+              <Link to={"getstarted"}>BOOK A SESSION</Link>
             </button>
           </div>
         </section>
