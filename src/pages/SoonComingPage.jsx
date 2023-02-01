@@ -4,13 +4,13 @@ import Logo from "../assets/images/comingpage/logo.svg";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import "../app.css";
-import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import classNames from "classnames";
 import HamburgerSoonComingPage from "../component/HamburgerSoonComingPage";
 import MenuComingSoonPage from "../component/landing page/MenuSoonComingPage";
 import { Link } from "react-router-dom";
+import { schemaNotifyMe } from "../util/schema";
 
 // ..
 AOS.init();
@@ -20,12 +20,6 @@ const SoonComingPage = () => {
     setToggleMenu(!toggleMenu);
   };
 
-  const schema = yup.object().shape({
-    email_address: yup
-      .string()
-      .email("Email must be a valid email")
-      .required("Email field cannot be empty"),
-  });
   const {
     register,
     formState: { errors },
@@ -35,8 +29,11 @@ const SoonComingPage = () => {
     criticalMode: "all",
     revalidateMode: "onchange",
 
-    resolver: yupResolver(schema),
+    resolver: yupResolver(schemaNotifyMe),
   });
+
+
+  
   const [email, setEmail] = useState("");
 
   const onchangeHandler = (e) => {
