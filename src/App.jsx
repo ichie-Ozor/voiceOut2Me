@@ -5,6 +5,7 @@ import BookASession from "./pages/BookASession";
 import Contact from "./pages/Contact";
 import GetStarted from "./pages/GetStarted";
 import Home from "./pages/Home";
+import LogInCounselor from "./pages/LogInCounselor";
 import LogInUser from "./pages/LogInUser";
 import Service from "./pages/Service";
 import SoonComingPage from "./pages/SoonComingPage";
@@ -15,8 +16,8 @@ const App = () => {
     <Routes>
       <Route path={"/"}>
         <Route index element={<SoonComingPage />} />
-        {/* <Route path="home" element={<Home/>}/> */}
         <Route path="loginuser" element={<LogInUser />} />
+        <Route path="logincounselor" element={<LogInCounselor />} />
         <Route path="getstarted" element={<GetStarted />} />
         <Route path="bookasession" element={<BookASession />} />
       </Route>
@@ -24,7 +25,6 @@ const App = () => {
       <Route path={"/"} element={<GlobalLayout />}>
         <Route index element={<Home />} />
         <Route path="home" element={<Home />} />
-
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="service" element={<Service />} />
