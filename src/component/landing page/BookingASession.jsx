@@ -36,7 +36,7 @@ const BookingASession = () => {
               In to start your booking session.
             </p>
             <button className=" text-white py-[17.5px] px-[49.58px] rounded mt-[40px] bg-[#8155BA] transition-all hover:opacity-70">
-              <Link to={"getstarted"}>BOOK A SESSION</Link>
+              <Link to={"/getstarted"}>BOOK A SESSION</Link>
             </button>
           </div>
         </section>

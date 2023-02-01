@@ -5,11 +5,11 @@ import Logo from "../assets/images/logo.svg";
 import GoogleLogo from "../assets/images/google-logo.svg";
 import EyeLogo from "../assets/images/eye-logo.svg";
 import { Link } from "react-router-dom";
-import { schemaLogInUser } from "../util/schema";
+import { schemaLogInCounselor } from "../util/schema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
-const LogInUser = () => {
+const LogInCounselor = () => {
   const {
     register,
     // formState: { errors },
@@ -19,7 +19,7 @@ const LogInUser = () => {
     criticalMode: "all",
     revalidateMode: "onchange",
 
-    resolver: yupResolver(schemaLogInUser),
+    resolver: yupResolver(schemaLogInCounselor),
   });
 
   return (
@@ -126,4 +126,4 @@ const LogInUser = () => {
   );
 };
 
-export default LogInUser;
+export default LogInCounselor;
