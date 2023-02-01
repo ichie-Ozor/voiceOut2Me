@@ -12,7 +12,7 @@ import { useForm } from "react-hook-form";
 const LogInUser = () => {
   const {
     register,
-    formState: { errors },
+    // formState: { errors },
     handleSubmit,
   } = useForm({
     mode: "onsubmit",
