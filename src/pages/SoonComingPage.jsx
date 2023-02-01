@@ -10,6 +10,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import classNames from "classnames";
 import HamburgerSoonComingPage from "../component/HamburgerSoonComingPage";
 import MenuComingSoonPage from "../component/landing page/MenuSoonComingPage";
+import { Link } from "react-router-dom";
 
 // ..
 AOS.init();
@@ -64,7 +65,7 @@ const SoonComingPage = () => {
   return (
     <div>
       <section className="w-screen">
-        <header className=" h-[5.438rem] flex relative items-center justify-center bg-[#8155B] overflow-hidden">
+        <header className=" h-[5.438rem] flex relative items-center justify-center bg-[#8155BA] overflow-hidden">
           <img
             className=" absolute h-[8rem] sm:h-[9rem] -left-4 sm:left-0 lg:left-2 xl:left-8"
             src={Logo}
@@ -74,7 +75,9 @@ const SoonComingPage = () => {
             <h1 className=" text-sm text-white sm:text-xl  font-bold font-OpenSand pl-14 lg:pl-10 ">
               VoiceOut2Me
             </h1>
-            <h1 >About</h1>
+            <Link to={"/home"} className="about-us border-[1px] border-white rounded-2xl px-6 py-1 text-lg text-white hover:border-[2px] hidden lg:flex ">
+              About us
+            </Link>
             <div className="menu lg:hidden z-20"
             onClick={displayMenuHandler}>
               <HamburgerSoonComingPage ToggleMenu={toggleMenu}/>
