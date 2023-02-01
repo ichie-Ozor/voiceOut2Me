@@ -23,7 +23,7 @@ const OurSpecialFeature = () => {
         <span className="absolute right-0">
           <img className="w-[1rem] lg:w-[2rem]" src={RightRiangleImage} alt="right triangle" />
         </span>
-        <h1 className="text-2xl text-white font-[600] mt-1 ">Our Special Features</h1>
+        <h1 className="text-2xl text-white font-[600] mt-2 ">Our Special Features</h1>
         <p className="text-2xl text-[#EBEAEB] mb-2">Made for you</p>
       </div>
       <section className=" flex flex-col-reverse md:flex lg:flex-row gap-4">
