@@ -56,14 +56,14 @@ const LogInUser = () => {
           <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-0">
             <div className="flex flex-col items-start gap-5">
               <h1 className="ml-[5%] lg:ml-0">Sign in into your account</h1>
-              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[8%] sm:ml-[25%] md:w-[25rem] md:ml-[22%] min-[425px]:ml-[18%] min-[373px]:ml-[15%] min-[570px]:ml-[27%]  lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[10%] xl:ml-[22%]">
+              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[8%] sm:ml-[25%] md:w-[25rem] md:ml-[22%] min-[425px]:ml-[18%] min-[373px]:ml-[15%] min-[363px]:ml-[14%] min-[570px]:ml-[27%]  lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[10%] xl:ml-[22%]">
                 <img src={GoogleLogo} alt="googleLogo" />
                 <span>Sign in with Google</span>
               </button>
-              <div className="flex items-center  ml-[-6%] sm:ml-[2%] md:ml-[5px]  lg:ml-[-0.5rem] mt-[1rem] mb-[2rem] min-[425px]:ml-[-10px] min-[540px]:ml-[0rem] min-[373px]:ml-[-9px]">
-                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[7.5rem] xl:w-[13.5rem] min-[1366px]:w-[12rem] min-[425px]:w-[5.5rem]  min-[373px]:w-[4rem] min-[1440px]:ml-[2.5rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black ml-[2rem]"></span>
+              <div className="flex items-center  ml-[-6%] sm:ml-[2%] md:ml-[5px]  lg:ml-[-0.5rem] mt-[1rem] mb-[2rem] min-[425px]:ml-[-10px] min-[540px]:ml-[0rem] min-[373px]:ml-[-9px] min-[363px]:ml-[-9px]">
+                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[7.5rem] xl:w-[13.5rem] min-[1366px]:w-[12rem] min-[425px]:w-[5.5rem]  min-[373px]:w-[4rem] min-[363px]:w-[3.5rem] min-[1440px]:ml-[2.5rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black ml-[2rem]"></span>
                 <p className="px-2 text-[#1E122D] "> OR LOG IN WITH EMAIL</p>
-                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[7.5rem] xl:w-[13.5rem] min-[1366px]:w-[12rem]  min-[425px]:w-[5.5rem] min-[373px]:w-[4rem] min-[1440px]:ml-[2.5rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black"></span>
+                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[7.5rem] xl:w-[13.5rem] min-[1366px]:w-[12rem]  min-[425px]:w-[5.5rem] min-[373px]:w-[4rem] min-[363px]:w-[3.5rem] min-[1440px]:ml-[2.5rem] min-[540px]:w-[9.4rem] min-[748px]:w-[13.8rem] h-[1px] bg-black"></span>
               </div>
             </div>
 
