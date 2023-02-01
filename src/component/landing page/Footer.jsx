@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="flex flex-col gap-2 w-[80%] lg:flex lg:gap-2  lg:items-cente">
           <label className="text-white" htmlFor="email">Email:</label>
           <input className="p-2 rounded" type="text" placeholder="Enter Email" name="email"/>
-          <button className=" bg-white rounded py-2 px-6 text-[#695E93] font-bold">Submit</button>
+          <button className=" bg-[#8155BA] rounded py-2 px-6 text-white border-[1px] border-white font-bold">Submit</button>
           </div>
         </div>
       </section>
