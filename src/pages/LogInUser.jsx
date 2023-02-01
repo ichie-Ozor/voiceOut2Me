@@ -56,7 +56,7 @@ const LogInUser = () => {
           <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-0">
             <div className="flex flex-col items-start gap-5">
               <h1 className="ml-[5%] lg:ml-0">Sign in into your account</h1>
-              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[8%] sm:ml-[25%] md:w-[25rem] md:ml-[22%] min-[425px]:ml-[18%] min-[373px]:ml-[15%] min-[357px]:ml-[14%] min-[570px]:ml-[27%]  lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[10%] xl:ml-[22%]">
+              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[8%] sm:ml-[25%] min-[750px]:ml-[30%] md:w-[25rem] md:ml-[23%] min-[425px]:ml-[18%] min-[373px]:ml-[15%] min-[357px]:ml-[14%] min-[570px]:ml-[27%]  lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[10%] xl:ml-[22%]">
                 <img src={GoogleLogo} alt="googleLogo" />
                 <span>Sign in with Google</span>
               </button>
