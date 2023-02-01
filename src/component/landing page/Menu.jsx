@@ -43,7 +43,7 @@ const Menu = ({ ToggleMenu }) => {
     <>
       <div
         className={classNames(
-          "flex lg:hidden  w-[10rem] md:w-[12rem] h-[50vh] fixed top-0 right-0 bg-[#8155BA]  flex-col gap-5 justify-center items-center text-white font-Lato font-bold transition-all duration-[0.5s] translate-x-40 -translate-y-[100%] pt-10",
+          "flex lg:hidden  w-[10rem] md:w-[12rem]  py-[4rem] fixed top-0 right-0 bg-[#8155BA]  flex-col gap-5 justify-center items-center text-white font-Lato font-bold transition-all duration-[0.5s] translate-x-40 -translate-y-[100%] ",
           { "-translate-y-0 translate-x-1": ToggleMenu }
         )}
       >
