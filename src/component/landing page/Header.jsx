@@ -6,8 +6,6 @@ import Menu from "./Menu";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  // console.log(toggleMenu);
-
   const displayMenuHandler = () => {
     setToggleMenu(!toggleMenu);
   };
