@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/images/logo.svg";
@@ -7,11 +6,12 @@ import Menu from "./Menu";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  console.log(toggleMenu);
+  // console.log(toggleMenu);
 
   const displayMenuHandler = () => {
     setToggleMenu(!toggleMenu);
   };
+
 
   return (
     <div className="relative">
@@ -26,10 +26,10 @@ const Header = () => {
             VoiceOut2me
           </h1>
           <div
-            className="flex lg:hidden ml-[10%]"
+            className="flex lg:hidden ml-[10%] z-20 "
             onClick={displayMenuHandler}
           >
-            <HamburgerMain />
+            <HamburgerMain ToggleMenu={toggleMenu} />
           </div>
           <div className="hidden lg:flex lg:gap-[1.5rem] text-[#555455]">
             <NavLink to={"/"}>Home</NavLink>
@@ -47,11 +47,9 @@ const Header = () => {
         </nav>
       </header>
       <div
-        className={classNames("absolute right-0 translate-x-[100%] transition-all ease-in duration-300", {
-          " translate-x-0": toggleMenu
-        })}
+        className="relative"
       >
-        <Menu />
+        <Menu  ToggleMenu={toggleMenu}/>
       </div>
     </div>
   );
