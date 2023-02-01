@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import HeroImage from "../assets/images/comingpage/coming-soon-page-hero.svg";
-import { Link } from "react-router-dom";
 import Logo from "../assets/images/comingpage/logo.svg";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -9,11 +8,17 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import classNames from "classnames";
-import Hamburger from "../component/Hamburger";
+import HamburgerSoonComingPage from "../component/HamburgerSoonComingPage";
+import MenuComingSoonPage from "../component/landing page/MenuSoonComingPage";
 
 // ..
 AOS.init();
 const SoonComingPage = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const displayMenuHandler = () => {
+    setToggleMenu(!toggleMenu);
+  };
+
   const schema = yup.object().shape({
     email_address: yup
       .string()
@@ -59,7 +64,7 @@ const SoonComingPage = () => {
   return (
     <div>
       <section className="w-screen">
-        <header className=" h-[5.438rem] flex relative items-center justify-center bg-[#695E93] overflow-hidden">
+        <header className=" h-[5.438rem] flex relative items-center justify-center bg-[#8155BA] overflow-hidden">
           <img
             className=" absolute h-[8rem] sm:h-[9rem] -left-4 sm:left-0 lg:left-2 xl:left-8"
             src={Logo}
@@ -69,13 +74,11 @@ const SoonComingPage = () => {
             <h1 className=" text-sm text-white sm:text-xl  font-bold font-OpenSand pl-14 lg:pl-10">
               VoiceOut2Me
             </h1>
-            <div className="menu lg:hidden">
-              <Hamburger />
+            <div className="menu lg:hidden z-20"
+            onClick={displayMenuHandler}>
+              <HamburgerSoonComingPage ToggleMenu={toggleMenu}/>
             </div>
-            <Link to={"/"} className="about-us border-[1px] border-white rounded-2xl px-6 py-1 text-lg text-white hover:border-[2px] hidden lg:flex ">
-              About us
-            </Link>
-          </section>
+            <MenuComingSoonPage ToggleMenu={toggleMenu}/>         </section>
         </header>
 
         <section className=" w-[92%] md:w-[90%] m-auto lg:mt-10 lg:mb-20  py-4 flex flex-col items-center ">

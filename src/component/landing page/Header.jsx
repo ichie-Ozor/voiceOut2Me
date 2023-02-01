@@ -6,8 +6,6 @@ import Menu from "./Menu";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  // console.log(toggleMenu);
-
   const displayMenuHandler = () => {
     setToggleMenu(!toggleMenu);
   };
@@ -26,10 +24,10 @@ const Header = () => {
             VoiceOut2me
           </h1>
           <div
-            className="flex lg:hidden ml-[10%] z-20 "
+            className="flex lg:hidden ml-[10%] z-20"
             onClick={displayMenuHandler}
           >
-            <HamburgerMain ToggleMenu={toggleMenu} />
+            <HamburgerMain ToggleMenu={toggleMenu}/>
           </div>
           <div className="hidden lg:flex lg:gap-[1.5rem] text-[#555455]">
             <NavLink to={"/"}>Home</NavLink>
@@ -47,9 +45,9 @@ const Header = () => {
         </nav>
       </header>
       <div
-        className="relative"
+        className=""
       >
-        <Menu  ToggleMenu={toggleMenu}/>
+        <Menu ToggleMenu={toggleMenu}/>
       </div>
     </div>
   );

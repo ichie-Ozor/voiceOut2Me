@@ -1,0 +1,8 @@
+.menu-wrapper ul li{
+    text-shadow: 0 0 0 red;
+    
+}
+.menu-wrapper ul li:hover{
+    text-shadow: 0 2px 2px rgb(0, 0, 0);
+    
+}

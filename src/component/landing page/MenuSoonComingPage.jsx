@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../component/menu.css";
 
-const Menu = ({ ToggleMenu }) => {
+const MenuComingSoonPage = ({ ToggleMenu }) => {
   const menuList = [
     {
       menu: "Home",
@@ -31,7 +31,7 @@ const Menu = ({ ToggleMenu }) => {
   const renderMenu = menuList.map((menu, index) => {
     return (
       <ul key={index} className="">
-        <li className=" hover:-translate-y-[6px] transition-all duration-[0.3s]  p-2">
+        <li className=" hover:-translate-y-[6px] transition-all duration-[0.3s] p-2">
           <Link className="" to={menu.path}>
             {menu.menu}
           </Link>
@@ -53,4 +53,4 @@ const Menu = ({ ToggleMenu }) => {
   );
 };
 
-export default Menu;
+export default MenuComingSoonPage;
