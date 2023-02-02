@@ -19,6 +19,12 @@ export const schemaLogInCounselor = yup.object().shape({
     .string()
     .min(8, "Password must not be less done eight characters.").required("Password cannot be empty"),
 });
+export const schemaSignUpUser = yup.object().shape({
+  userName: yup.string().required("Name field cannot be empty"),
+  password: yup
+    .string()
+    .min(8, "Password must not be less done eight characters.").required("Password cannot be empty"),
+});
 
 
 
