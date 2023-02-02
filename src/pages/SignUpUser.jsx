@@ -37,7 +37,7 @@ const SignUpUser = () => {
             </p>
 
             <div
-              className="w-[15rem] h-[22rem] md:w-[22rem] md:h-[30rem] lg:lg:w-[35.25rem] xl:lg:w-[45.25rem] lg:h-[42.563rem] xl:h-[50rem] relative mb-[10rem]"
+              className="w-[15rem] h-[22rem] md:w-[22rem] md:h-[30rem] lg:lg:w-[28.25rem] xl:lg:w-[48.25rem] lg:h-[38rem] xl:h-[42rem] relative mb-[5rem] overflow-none"
               style={{
                 background: `url(${UserSignupIMage})`,
                 backgroundRepeat: "no-repeat",
@@ -46,9 +46,9 @@ const SignUpUser = () => {
             ></div>
           </section>
           {/* Form section */}
-          <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-0 mt-[-50%] md:mt-[-20%] lg:mt-0">
+          <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-[-5%] mt-[-20%] md:mt-[-8%] lg:mt-0">
                     {/* Header */}
-        <header className="flex justify-center items-center font-Lato text-[32px] py-[2rem] ">
+        <header className="flex justify-center items-center font-Lato text-[32px] py-[2rem] lg:mt-[10%]">
           <h1 className=" text-[#8155BA] font-bold">Sign Up</h1>
         </header>
 
@@ -57,7 +57,7 @@ const SignUpUser = () => {
               action="#"
               onSubmit={handleSubmit()}
             >
-              {/* input section with out the checkbox */}
+              {/* input section without the checkbox */}
               <section className="w-[90%] lg:w-full m-auto [&_Input]:w-[90%]">
                 <div className="flex relative mb-[2rem]">
                   <label className="absolute" htmlFor="fullName">
@@ -113,7 +113,7 @@ const SignUpUser = () => {
                 </div>
               </section>
               {/* checkbox and policy section */}
-              <section className="w-[95%] md:w-[67%] lg:w-[88%] xl:w-[62%] flex justify-center items-center mt-3">
+              <section className="w-[92%] ml-3 sm:ml-0 md:w-[67%] lg:w-[88%] xl:w-[62%] flex justify-center items-center mt-3">
                   <label
                     className="text-[12px] sm:text-base"
                     htmlFor="keepMeLogIn"
@@ -149,9 +149,9 @@ const SignUpUser = () => {
             {/* or section */}
             <section className="flex">
               <div className="flex items-center justify-center w-full mt-[4rem] mb-[2rem]">
-                <span className="w-[40%] md:w-[38%] h-[1px] bg-black "></span>
+                <span className="w-[32%] md:w-[35%] lg:w-[40%] h-[1px] bg-black "></span>
                 <p className="px-2 text-[#1E122D] "> OR</p>
-                <span className="w-[40%] md:w-[38%] h-[1px] bg-black"></span>
+                <span className="w-[32%] md:w-[35%] lg:w-[40%] h-[1px] bg-black"></span>
               </div>
             </section>
             {/* siging in with social media */}
