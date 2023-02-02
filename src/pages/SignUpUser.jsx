@@ -28,7 +28,7 @@ const SignUpUser = () => {
           {/* Hero section */}
           <section className=" w-full lg:w-[50%] flex flex-col items-center relative">
             <div className="w-full flex justify-center items-center absolute lg:top-[15%]">
-              <p className="  w-[80%] p-2 my-[2rem] text-center lg:text-left lg:w-[85%] font-Lato xl:w-[70%] text-[#281C2D]  font-bold">
+              <p className="  w-[80%] p-2 my-[2rem] text-center lg:text-left lg:w-[85%] font-Lato xl:w-[70%] text-[#281C2D]">
                 Get an unbiased advice from our professional Psychotherapist and
                 improve positivity.
               </p>

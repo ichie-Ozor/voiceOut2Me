@@ -35,16 +35,16 @@ const SignUpCounselor = () => {
         <main className="flex flex-col lg:flex-row ">
           {/* Hero section */}
           <section className=" w-full lg:w-[50%] flex flex-col items-center relative">
-            <div className="absolute w-full flex justify-center items-center z-20 top-[15%]">
+            <div className="absolute w-full flex justify-center items-center z-20 top-[10%] md:top-0 lg:top-[15%]">
 
-            <p className="    lg:text-left lg:w-[80%]   p-2 my-[2rem] text-center font-Lato  text-[#281C2D] md:my-[4rem]">
+            <p className="    lg:text-left w-[75%] lg:w-[75%]  xl:w-[65%] p-2 text-center font-Lato  text-[#281C2D] md:my-[4rem]">
               Thank you for being our unsung hero! Sign up to provide
               counselling solutions.
             </p>
             </div>
 
             <div
-              className="w-[15rem] h-[15rem] md:w-[22rem] md:h-[30rem] lg:w-[25.25rem]  xl:w-[40.25rem] lg:h-[30rem] xl:h-[35rem] relative mb-[5rem] mt-[30%] md:mt-[20%] lg:mt-[60%] xl:mt-[40%]"
+              className="w-[15rem] h-[15rem] md:w-[22rem] md:h-[30rem] lg:w-[25.25rem] min-[532px]:mt-[25%] xl:w-[40.25rem] lg:h-[30rem] xl:h-[35rem] relative mb-[5rem] mt-[53%] md:mt-[20%] lg:mt-[60%] xl:mt-[40%]"
               style={{
                 background: `url(${CounselorSignupIMage})`,
                 backgroundRepeat: "no-repeat",
@@ -53,7 +53,7 @@ const SignUpCounselor = () => {
             ></div>
           </section>
           {/* Form section */}
-          <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-[-5%] mt-[-20%] md:mt-[-25%] lg:mt-0">
+          <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-[-5%] mt-[-20%] md:mt-[-25%] min-[532px]:mt-[-15%] lg:mt-0">
             {/* Header */}
             <header className="flex justify-center items-center font-Lato text-[32px] py-[2rem] lg:mt-[5%]">
               <h1 className=" text-[#8155BA] font-bold">Sign Up</h1>
@@ -130,6 +130,8 @@ const SignUpCounselor = () => {
                       className="mr-2"
                       type="checkbox"
                       name="keepMeLogIn"
+                      {...register("keepMeLogIn")}
+
                       id="keepMeLogIn"
                     />
                   </span>
