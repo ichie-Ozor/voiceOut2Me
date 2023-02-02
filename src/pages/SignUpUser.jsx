@@ -37,7 +37,7 @@ const SignUpUser = () => {
             </p>
 
             <div
-              className="w-[15rem] h-[22rem] md:w-[22rem] md:h-[30rem] lg:lg:w-[28.25rem] xl:lg:w-[48.25rem] lg:h-[38rem] xl:h-[42rem] relative mb-[5rem] overflow-none"
+              className="w-[15rem] h-[22rem] md:w-[22rem] md:h-[30rem] lg:w-[32.25rem]  min-[1440px]:w-[45.25rem] xl:lg:w-[45.25rem] lg:h-[35rem] xl:h-[42rem] relative mb-[5rem] "
               style={{
                 background: `url(${UserSignupIMage})`,
                 backgroundRepeat: "no-repeat",
@@ -107,7 +107,7 @@ const SignUpUser = () => {
                     {...register("password")}
                     id="password"
                   />
-                  <span className="absolute left-[88%] top-[25%] cursor-pointer md:left-[90%] min-[570px]:left-[90.5%]">
+                  <span className="absolute left-[88%] top-[25%] cursor-pointer md:left-[87%] min-[570px]:left-[90.5%]">
                     <img src={EyeLogo} alt="eyelogo" />
                   </span>
                 </div>
