@@ -118,7 +118,7 @@ const LogInCounselor = () => {
               </section>
               <button className="px-[35%] ml-[8%] lg:px-[9.875rem] py-3 bg-[#534B75] text-white lg:ml-[10%] xl:ml-[23%] rounded mt-[3rem] font-medium transition-all hover:opacity-70" type="submit">Log in</button>
             </form>
-            <p className="text-[#414041] mt-[2rem] mb-[5rem] lg:my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">Don’t have an account?<span className="text-[#938AB4]"><Link>Create Account</Link></span> </p>
+            <p className="text-[#414041] mt-[2rem] mb-[5rem] lg:my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">Don’t have an account?<span className="text-[#938AB4]"><Link to={"/signupcounselor"}>Create Account</Link></span> </p>
           </section>
         </main>
       </div>

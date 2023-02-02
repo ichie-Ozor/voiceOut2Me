@@ -1,14 +1,16 @@
 import React from "react";
 import GoogleLogo from "../assets/images/google-logo.svg";
+import GetStartedImage2 from "../assets/images/get-started-image2.svg";
+
 import FacebookLogo from "../assets/images/facebook-logo.svg";
-import UserSignupIMage from "../assets/images/user-signup-image.svg";
+import CounselorSignupIMage from "../assets/images/counselor-signup-image.svg";
 import EyeLogo from "../assets/images/eye-logo.svg";
 import { Link } from "react-router-dom";
-import { schemaSignUpUser } from "../util/schema";
+import { schemaSignUpCounselor } from "../util/schema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
-const SignUpUser = () => {
+const SignUpCounselor = () => {
   const {
     register,
     // formState: { errors },
@@ -18,35 +20,42 @@ const SignUpUser = () => {
     criticalMode: "all",
     revalidateMode: "onchange",
 
-    resolver: yupResolver(schemaSignUpUser),
+    resolver: yupResolver(schemaSignUpCounselor),
   });
 
   return (
     <>
       <div className="w-full h-full relative font-Lato">
+        <img
+          className="w-[2rem] absolute lg:w-[10rem]"
+          src={GetStartedImage2}
+          alt="getstartedimage1"
+        />
+
         <main className="flex flex-col lg:flex-row ">
           {/* Hero section */}
           <section className=" w-full lg:w-[50%] flex flex-col items-center relative">
-            <div className="w-full flex justify-center items-center absolute lg:top-[15%]">
-              <p className="  w-[80%] p-2 my-[2rem] text-center lg:text-left lg:w-[85%] font-Lato xl:w-[70%] text-[#281C2D]  font-bold">
-                Get an unbiased advice from our professional Psychotherapist and
-                improve positivity.
-              </p>
+            <div className="absolute w-full flex justify-center items-center z-20 top-[15%]">
+
+            <p className="    lg:text-left lg:w-[80%]   p-2 my-[2rem] text-center font-Lato  text-[#281C2D] md:my-[4rem]">
+              Thank you for being our unsung hero! Sign up to provide
+              counselling solutions.
+            </p>
             </div>
 
             <div
-              className="w-[15rem] h-[22rem] mt-[50%] md:mt-[20%] sm:mt-[25%] md:w-[22rem] md:h-[30rem] lg:w-[32.25rem]  min-[1440px]:w-[45.25rem] xl:lg:w-[45.25rem] lg:h-[35rem] xl:h-[42rem] relative mb-[5rem] lg:mt-[60%] xl:mt-[40%]"
+              className="w-[15rem] h-[15rem] md:w-[22rem] md:h-[30rem] lg:w-[25.25rem]  xl:w-[40.25rem] lg:h-[30rem] xl:h-[35rem] relative mb-[5rem] mt-[30%] md:mt-[20%] lg:mt-[60%] xl:mt-[40%]"
               style={{
-                background: `url(${UserSignupIMage})`,
+                background: `url(${CounselorSignupIMage})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "contain",
               }}
             ></div>
           </section>
           {/* Form section */}
-          <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-[-5%] mt-[-20%] md:mt-[-8%] lg:mt-0">
+          <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-[-5%] mt-[-20%] md:mt-[-25%] lg:mt-0">
             {/* Header */}
-            <header className="flex justify-center items-center font-Lato text-[32px] py-[2rem] lg:mt-[10%] sm:mt-[10%]">
+            <header className="flex justify-center items-center font-Lato text-[32px] py-[2rem] lg:mt-[5%]">
               <h1 className=" text-[#8155BA] font-bold">Sign Up</h1>
             </header>
 
@@ -166,10 +175,10 @@ const SignUpUser = () => {
               </div>
             </section>
 
-            <p className="text-[#414041] mt-[2rem] mb-[5rem] lg:my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">
+            <p className="text-[#414041] mt-[2rem] mb-[5rem] lg:my-[1rem] lg:mt-[3rem] ml-[8%] lg:ml-0">
               Already have an account?{" "}
               <span className="text-[#938AB4]">
-                <Link to={"/loginuser"}>Log in</Link>
+                <Link to={"/logincounselor"}>Log in</Link>
               </span>
             </p>
           </section>
@@ -179,4 +188,4 @@ const SignUpUser = () => {
   );
 };
 
-export default SignUpUser;
+export default SignUpCounselor;
