@@ -149,9 +149,9 @@ const SignUpUser = () => {
             {/* or section */}
             <section className="flex">
               <div className="flex items-center justify-center w-full mt-[4rem] mb-[2rem]">
-                <span className="w-[32%] md:w-[35%] lg:w-[40%] h-[1px] bg-black "></span>
+                <span className="w-[32%] md:w-[35%] lg:w-[40%] min-[532px]:w-[34%] h-[1px] bg-black "></span>
                 <p className="px-2 text-[#1E122D] "> OR</p>
-                <span className="w-[32%] md:w-[35%] lg:w-[40%] h-[1px] bg-black"></span>
+                <span className="w-[32%] md:w-[35%] lg:w-[40%] min-[532px]:w-[34%] h-[1px] bg-black"></span>
               </div>
             </section>
             {/* siging in with social media */}
