@@ -37,6 +37,9 @@ const LogInUser = () => {
       dispatch(selectUser(findUser))
       navigate("/userdashboard")
     }
+    else{
+      alert("User name and password does not exit. Please try again")
+    }
   };
 
   return (

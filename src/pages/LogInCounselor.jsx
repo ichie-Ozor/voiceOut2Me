@@ -39,6 +39,10 @@ const LogInCounselor = () => {
       navigate("/counselordashboard")
 
     }
+    else{
+      alert("User name and password does not exit. Please try again")
+    }
+
   };
 
 
