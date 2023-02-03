@@ -7,15 +7,18 @@ const usersSlice = createSlice({
   initialState: {
     value: {
       users,
+      selectedUser:""
     },
   },
   reducers: {
     addToUsers: (state, action) => {
       state.value.users.push(action.payload);
     },
-
+selectUser:(state,action)=>{
+  state.value.selectedUser=action.payload
+}
   },
 
 });
-export const { addToUsers } = usersSlice.actions;
+export const { addToUsers,selectUser } = usersSlice.actions;
 export default usersSlice.reducer;

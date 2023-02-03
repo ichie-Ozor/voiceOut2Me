@@ -4,15 +4,21 @@ import UserLogInImage from "../assets/images/user-log-in-image.svg";
 import Logo from "../assets/images/logo.svg";
 import GoogleLogo from "../assets/images/google-logo.svg";
 import EyeLogo from "../assets/images/eye-logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { schemaLogInCounselor } from "../util/schema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { selectCounselor } from "../store/slice/counselorsSlices ";
 
 const LogInCounselor = () => {
+  const navigate = useNavigate();
+  const dispatch=useDispatch()
+
   const {
     register,
     // formState: { errors },
+    getValues,
     handleSubmit,
   } = useForm({
     mode: "onsubmit",
@@ -21,6 +27,20 @@ const LogInCounselor = () => {
 
     resolver: yupResolver(schemaLogInCounselor),
   });
+
+  const getCounselor = useSelector((state) => state.Counselors.value.counselor);
+  const submitHandler = (e) => {
+    const { userName, password } = getValues();
+    const findUser = getCounselor.find(
+      (user) => user.userName === userName && user.password === password
+    );
+    if (findUser) {
+      dispatch(selectCounselor(findUser))
+      navigate("/counselordashboard")
+
+    }
+  };
+
 
   return (
     <>
@@ -69,7 +89,7 @@ const LogInCounselor = () => {
                 <span>Sign in with Google</span>
               </button>
             </div>
-            <div className="flex justify-center items-center w-full mt-[4rem] mb-[1rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21.5%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[32%] md:ml-[-2%] lg:[&_span]:w-[27%] xl:[&_span]:w-[30.5%]">
+            <div className="flex justify-center items-center w-full mt-[4rem] mb-[1rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21.5%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[32.5%] md:ml-[-2%] lg:[&_span]:w-[27%] xl:[&_span]:w-[30.5%]">
               <span className=" h-[1px] bg-black"></span>
               <p className="px-2 text-[#1E122D] text-sm">
                 OR LOG IN WITH EMAIL
@@ -81,7 +101,7 @@ const LogInCounselor = () => {
             <form
               className=" w-full lg:w-[90%] m-auto"
               action="#"
-              onSubmit={handleSubmit()}
+              onSubmit={handleSubmit(submitHandler)}
             >
               {/* Form sub-section */}
               <div className="ml-[3.5%] ">

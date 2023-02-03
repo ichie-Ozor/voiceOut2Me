@@ -27,7 +27,6 @@ const Menu = ({ ToggleMenu }) => {
     },
   ];
 
-  console.log(ToggleMenu);
   const renderMenu = menuList.map((menu, index) => {
     return (
       <ul key={index} className="">

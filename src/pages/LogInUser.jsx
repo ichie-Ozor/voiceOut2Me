@@ -4,19 +4,21 @@ import UserLogInImage from "../assets/images/user-log-in-image.svg";
 import Logo from "../assets/images/logo.svg";
 import GoogleLogo from "../assets/images/google-logo.svg";
 import EyeLogo from "../assets/images/eye-logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { schemaLogInUser } from "../util/schema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { selectUser } from "../store/slice/usersSlices";
 
 const LogInUser = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
+  const dispatch=useDispatch()
   const {
     register,
     // formState: { errors },
     handleSubmit,
-    // getValues,
+    getValues,
   } = useForm({
     mode: "onsubmit",
     criticalMode: "all",
@@ -26,12 +28,16 @@ const LogInUser = () => {
   });
 
   const getUsers = useSelector((state) => state.Users.value.users);
-  console.log(getUsers);
-
   const submitHandler = (e) => {
-    console.log("userName");
+    const { userName, password } = getValues();
+    const findUser = getUsers.find(
+      (user) => user.userName === userName && user.password === password
+    );
+    if (findUser) {
+      dispatch(selectUser(findUser))
+      navigate("/userdashboard")
+    }
   };
-
 
   return (
     <>
@@ -79,7 +85,7 @@ const LogInUser = () => {
                 <span>Sign in with Google</span>
               </button>
             </div>
-            <div className="flex justify-center items-center w-full mt-[4rem] mb-[2rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[32%] md:ml-[0] lg:[&_span]:w-[25%] xl:[&_span]:w-[29.5%]">
+            <div className="flex justify-center items-center w-full mt-[4rem] mb-[2rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[31%] md:ml-[0] lg:[&_span]:w-[25%] xl:[&_span]:w-[29.5%]">
               <span className=" h-[1px] bg-black"></span>
               <p className="px-2 text-[#1E122D] text-sm">
                 OR LOG IN WITH EMAIL
