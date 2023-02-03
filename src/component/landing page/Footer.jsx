@@ -9,6 +9,7 @@ const Footer = () => {
     register,
     // formState: { errors },
     handleSubmit,
+    // reset,
   } = useForm({
     mode: "onsubmit",
     criticalMode: "all",
@@ -23,24 +24,25 @@ const Footer = () => {
     setEmail(e.target.value);
   };
 
-  // const submitHandler = async (e) => {
-  //   // e.preventDefault();
-  //   const emialApi =
-  //   "https://v1.nocodeapi.com/voiceout2me/google_sheets/HuKXRGNHEoAOgyOh?tabId=sheet1"
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    // const NotifyEmialApi =
+    // "https://v1.nocodeapi.com/voiceout2me/google_sheets/HuKXRGNHEoAOgyOh?tabId=sheet1"
 
-  //   try {
-  //     const response = await fetch(emialApi, {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify([[email, new Date().toLocaleString()]]),
-  //     });
-  //     await response.json();
-  //     alert("Response submitted successfully");
-  //     setEmail("");
-  //   } catch (error) {
-  //     alert(error);
-  //   }
-  // };
+    // try {
+    //   const response = await fetch(NotifyEmialApi, {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify([[email, new Date().toLocaleString()]]),
+    //   });
+    //   await response.json();
+    //   alert("Response submitted successfully");
+    //   setEmail("");
+    // } catch (error) {
+    //   alert(error);
+    // }
+    // reset()
+  };
 
 
   return (
@@ -83,7 +85,7 @@ const Footer = () => {
           <p className="text-white/50 mb-5">
             Provide a reminder to learn more about new content.
           </p>
-          <form action="" onSubmit={handleSubmit()}>
+          <form action="" onSubmit={submitHandler(handleSubmit)}>
             <div className="flex flex-col gap-2 w-[80%] lg:flex lg:gap-2  lg:items-cente">
               <label className="text-white" htmlFor="email">
                 Email:

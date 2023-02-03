@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import counselors from "../../util/counselors";
+import counselors from "../../util/counselorsInfor";
 const counselor = counselors;
 const counselorsSlice = createSlice({
   name: "Counselors",

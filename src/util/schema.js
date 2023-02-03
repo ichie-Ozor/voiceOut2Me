@@ -38,7 +38,7 @@ export const schemaSignUpUser = yup.object().shape({
     .string()
     .min(8, "Password must not be less done eight characters.")
     .required("Password cannot be empty"),
-  keepMeLogIn: yup.boolean(),
+  keepMeLogIn: yup.boolean().required(),
 });
 export const schemaSignUpCounselor = yup.object().shape({
   fullName: yup.string().required("Name field cannot be empty "),
@@ -51,5 +51,5 @@ export const schemaSignUpCounselor = yup.object().shape({
     .string()
     .min(8, "Password must not be less done eight characters.")
     .required("Password cannot be empty"),
-  keepMeLogIn: yup.boolean(),
-});
+    keepMeLogIn: yup.boolean().required(),
+  });

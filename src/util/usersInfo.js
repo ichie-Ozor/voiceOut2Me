@@ -1,10 +1,11 @@
-const counselors=[
+const usersInfo=[
     {
         fullName:"Gideon Okai",
         userName:"agyanim",
         email:"agyanim@yahoo.com",
-        password:"123456789"
+        password:"123456789",
+        terms:false
     }
 ]
 
-export default counselors
+export default usersInfo

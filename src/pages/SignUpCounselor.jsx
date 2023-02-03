@@ -58,44 +58,46 @@ const SignUpCounselor = () => {
             <header className="flex justify-center items-center font-Lato text-[32px] py-[2rem] lg:mt-[5%]">
               <h1 className=" text-[#8155BA] font-bold">Sign Up</h1>
             </header>
-
             <form
               className=" w-full lg:w-[100%] m-auto "
               action="#"
               onSubmit={handleSubmit()}
             >
+              {/* form sub section */}
+<div className="flex justify-center items-center flex-col ml-[5%]">
+  
               {/* input section without the checkbox */}
               <section className="w-[90%] lg:w-full m-auto [&_Input]:w-[90%]">
-                <div className="flex relative mb-[2rem]">
-                  <label className="absolute" htmlFor="fullName">
+                <div className="flex relative mb-[1rem] flex-col">
+                  <label className="" htmlFor="fullName">
                     Full Name:
                   </label>
                   <input
-                    className="border-b-[2px] pl-[5rem] pt-4 border-black"
+                    className="border-b-[2px] p-2 border-black"
                     type="text"
                     {...register("fullName")}
                     name="fullName"
                     id="fullName"
                   />
                 </div>
-                <div className="flex relative mb-[2rem]">
-                  <label className="absolute" htmlFor="username">
+                <div className="flex relative mb-[1rem] flex-col">
+                  <label className="" htmlFor="username">
                     Username:
                   </label>
                   <input
-                    className="border-b-[2px] pl-[5rem] pt-4  border-black"
+                    className="border-b-[2px] p-2   border-black"
                     type="text"
                     {...register("Username")}
                     name="Username"
                     id="Username"
                   />
                 </div>
-                <div className="flex relative mb-[2rem]">
-                  <label className="absolute" htmlFor="email">
+                <div className="flex relative mb-[1rem] flex-col">
+                  <label className="" htmlFor="email">
                     Email:
                   </label>
                   <input
-                    className="border-b-[2px] pl-[5rem] pt-4  border-black"
+                    className="border-b-[2px] p-2   border-black"
                     type="text"
                     {...register("email")}
                     name="email"
@@ -103,24 +105,24 @@ const SignUpCounselor = () => {
                   />
                 </div>
 
-                <div className="flex relative">
-                  <label className="absolute" htmlFor="password">
+                <div className="flex relative flex-col">
+                  <label className="" htmlFor="password">
                     Password:
                   </label>
                   <input
-                    className="border-b-[2px] px-[2.5rem] pt-4 border-black"
+                    className="border-b-[2px] p-2 border-black"
                     type="password"
                     name="password"
                     {...register("password")}
                     id="password"
                   />
-                  <span className="absolute left-[88%] top-[25%] cursor-pointer md:left-[87%] min-[570px]:left-[90.5%]">
+                  <span className="absolute left-[81%] top-[60%] cursor-pointer md:left-[86%] min-[570px]:left-[90.5%]">
                     <img src={EyeLogo} alt="eyelogo" />
                   </span>
                 </div>
               </section>
               {/* checkbox and policy section */}
-              <section className="w-[92%] ml-3 sm:ml-0 md:w-[67%] lg:w-[88%] xl:w-[62%] flex justify-center items-center mt-3">
+              <section className="w-[92%] ml-3 sm:ml-0 md:w-[67%] lg:w-[88%] xl:w-[68%] flex justify-center items-center mt-3">
                 <label
                   className="text-[12px] sm:text-base"
                   htmlFor="keepMeLogIn"
@@ -145,6 +147,9 @@ const SignUpCounselor = () => {
                   </span>
                 </label>
               </section>
+  </div>
+  
+
               {/* submit button */}
               <div className="flex justify-center items-center w-full">
                 <button

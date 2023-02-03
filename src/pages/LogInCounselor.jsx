@@ -31,7 +31,11 @@ const LogInCounselor = () => {
           alt="getstartedimage1"
         />
 
-        <img className="h-[10rem] ml-[25%] sm:ml-[35%] md:ml-[40%] lg:ml-[66%] xl:ml-[68%] min-[425px]:ml-[30%] min-[570px]:ml-[35%]" src={Logo} alt="logo" />
+        <img
+          className="h-[10rem] ml-[25%] sm:ml-[35%] md:ml-[40%] lg:ml-[66%] xl:ml-[68%] min-[425px]:ml-[30%] min-[570px]:ml-[35%]"
+          src={Logo}
+          alt="logo"
+        />
         <main className="flex flex-col lg:flex-row ">
           <section className=" w-full lg:w-[50%] flex flex-col items-center ">
             <div className="flex flex-col justify-center  text-cente">
@@ -43,8 +47,10 @@ const LogInCounselor = () => {
                 to access them all
               </p>
             </div>
+            {/* Hero image */}
+
             <div
-              className="w-[15rem] h-[18rem] lg:w-[25.75rem] lg:h-[44.313rem] ml-[2%] lg:ml-0"
+              className="w-[15rem] h-[18rem] lg:w-[25.75rem] lg:h-[33.313rem] ml-[2%] lg:ml-0"
               style={{
                 background: `url(${UserLogInImage})`,
                 backgroundRepeat: "no-repeat",
@@ -54,71 +60,91 @@ const LogInCounselor = () => {
           </section>
 
           <section className="w-full lg:w-[50%] ml-[0.3rem] md:ml-[1rem] lg:ml-0">
-            <div className="flex flex-col items-start gap-5">
+            <div className="flex flex-col items-start gap-5 ">
               <h1 className="ml-[5%] lg:ml-0">Sign in into your account</h1>
-              <button className="flex gap-8 border-[1px] border-violet-600 w-[16rem] sm:w-[20rem] ml-[8%] sm:ml-[25%] min-[750px]:ml-[30%] md:w-[25rem] md:ml-[23%] min-[425px]:ml-[18%] min-[373px]:ml-[15%] min-[357px]:ml-[14%] min-[570px]:ml-[27%]  lg:w-[23.625rem] justify-center items-center py-4 rounded lg:ml-[10%] xl:ml-[22%]">
+            </div>
+            <div className="w-full flex justify-center items-center mt-[1rem]">
+              <button className="flex gap-5 border-[1px] border-violet-600 w-[16rem] py-3 justify-center items-center rounded">
                 <img src={GoogleLogo} alt="googleLogo" />
                 <span>Sign in with Google</span>
               </button>
-              <div className="flex items-center  ml-[-6%] sm:ml-[2%] md:ml-[5px]  lg:ml-[-0.5rem] mt-[1rem] mb-[2rem] min-[425px]:ml-[-10px] min-[540px]:ml-[0rem] min-[373px]:ml-[-9px] min-[357px]:ml-[-9px]">
-                <span className="w-[3rem] sm:w-[10rem] md:w-[15rem] lg:w-[7.5rem] xl:w-[13.5rem] min-[1366px]:w-[12rem] min-[425px]:w-[5.5rem]  min-[373px]:w-[4rem] min-[357px]:w-[3.5rem] min-[1440px]:ml-[2.5rem] min-[540px]:w-[9.5rem] min-[748px]:w-[13.8rem] h-[1px] bg-black ml-[2rem]"></span>
-                <p className="px-2 text-[#1E122D] "> OR LOG IN WITH EMAIL</p>
-                <span className="w-[3rem] sm:w-[10rem] md:w-[14rem] lg:w-[7.5rem] xl:w-[13.5rem] min-[1366px]:w-[12rem]  min-[425px]:w-[5.5rem] min-[373px]:w-[4rem] min-[357px]:w-[3.5rem] min-[1440px]:ml-[2.5rem] min-[540px]:w-[9.5rem] min-[748px]:w-[13.8rem] h-[1px] bg-black"></span>
-              </div>
             </div>
+            <div className="flex justify-center items-center w-full mt-[4rem] mb-[1rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21.5%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[31.5%] md:ml-[-2%] lg:[&_span]:w-[27%] xl:[&_span]:w-[30.5%]">
+              <span className=" h-[1px] bg-black"></span>
+              <p className="px-2 text-[#1E122D] text-sm">
+                OR LOG IN WITH EMAIL
+              </p>
+              <span className="h-[1px] bg-black"></span>
+            </div>
+            {/* Form section */}
 
-            <form className=" w-full lg:w-[90%] m-auto" action="#" onSubmit={handleSubmit()}>
+            <form
+              className=" w-full lg:w-[90%] m-auto"
+              action="#"
+              onSubmit={handleSubmit()}
+            >
               <section className="w-[90%] lg:w-full m-auto">
-
-              <div className="flex relative mb-[2rem]">
-                <label className="absolute" htmlFor="userName">
-                  Username:
-                </label>
-                <input
-                  className="border-b-[2px] pl-[5rem] pt-4 w-[95%] border-black"
-                  type="text"
-                  {...register("userName")}
-                  name="userName"
-                  id="userName"
-                />
-              </div>
-
-              <div className="flex relative">
-                <label className="absolute" htmlFor="userName">
-                  Password:
-                </label>
-                <input
-                  className="border-b-[2px] px-[5rem] pt-4 w-[95%] border-black"
-                  type="password"
-                  name="password"
-                  {...register("password")}
-
-                  id="password"
-                />
-                <span className="absolute left-[88%] top-[25%] cursor-pointer md:left-[90%] min-[570px]:left-[90.5%]">
-                  <img src={EyeLogo} alt="eyelogo" />
-                </span>
-              </div>
-              <div>
-                <div className="flex justify-between w-[80%] mt-3">
-                  <label className="text-[12px] sm:text-base" htmlFor="keepMeLogIn">
-                    <span>
-                      <input
-                      className="mr-5"
-                        type="checkbox"
-                        name="keepMeLogIn"
-                        id="keepMeLogIn"
-                      />
-                    </span>
-                    Keep me logged in
+                <div className="flex relative mb-[2rem]">
+                  <label className="absolute" htmlFor="userName">
+                    Username:
                   </label>
-                  <p className="text-[12px] sm:text-base">Forget password?</p>
+                  <input
+                    className="border-b-[2px] pl-[5rem] pt-4 w-[95%] border-black"
+                    type="text"
+                    {...register("userName")}
+                    name="userName"
+                    id="userName"
+                  />
                 </div>
-              </div>
+
+                <div className="flex relative">
+                  <label className="absolute" htmlFor="userName">
+                    Password:
+                  </label>
+                  <input
+                    className="border-b-[2px] px-[5rem] pt-4 w-[95%] border-black"
+                    type="password"
+                    name="password"
+                    {...register("password")}
+                    id="password"
+                  />
+                  <span className="absolute left-[88%] top-[25%] cursor-pointer md:left-[90%] min-[570px]:left-[90.5%]">
+                    <img src={EyeLogo} alt="eyelogo" />
+                  </span>
+                </div>
+                <div>
+                  <div className="flex justify-between w-[80%] mt-3">
+                    <label
+                      className="text-[12px] sm:text-base"
+                      htmlFor="keepMeLogIn"
+                    >
+                      <span>
+                        <input
+                          className="mr-5"
+                          type="checkbox"
+                          name="keepMeLogIn"
+                          id="keepMeLogIn"
+                        />
+                      </span>
+                      Keep me logged in
+                    </label>
+                    <p className="text-[12px] sm:text-base">Forget password?</p>
+                  </div>
+                </div>
               </section>
-              <button className="px-[35%] ml-[8%] lg:px-[9.875rem] py-3 bg-[#534B75] text-white lg:ml-[10%] xl:ml-[23%] rounded mt-[3rem] font-medium transition-all hover:opacity-70" type="submit">Log in</button>
+              <button
+                className="px-[35%] ml-[8%] lg:px-[9.875rem] py-3 bg-[#534B75] text-white lg:ml-[10%] xl:ml-[23%] rounded mt-[3rem] font-medium transition-all hover:opacity-70"
+                type="submit"
+              >
+                Log in
+              </button>
             </form>
-            <p className="text-[#414041] mt-[2rem] mb-[5rem] lg:my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">Don’t have an account?<span className="text-[#938AB4]"><Link to={"/signupcounselor"}>Create Account</Link></span> </p>
+            <p className="text-[#414041] mt-[2rem] mb-[5rem] lg:my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">
+              Don’t have an account?
+              <span className="text-[#938AB4]">
+                <Link to={"/signupcounselor"}>Create Account</Link>
+              </span>{" "}
+            </p>
           </section>
         </main>
       </div>
