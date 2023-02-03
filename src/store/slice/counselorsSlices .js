@@ -6,13 +6,17 @@ const counselorsSlice = createSlice({
   initialState: {
     value: {
       counselor,
+      selectedCounselor:""
     },
   },
   reducers: {
     addToCounselors: (state, action) => {
       state.value.counselor.push(action.payload);
     },
+    selectCounselor:(state,action)=>{
+      state.value.selectedCounselor=action.payload
+    }
   },
 });
-export const { addToCounselors } = counselorsSlice.actions;
+export const { addToCounselors,selectCounselor } = counselorsSlice.actions;
 export default counselorsSlice.reducer;

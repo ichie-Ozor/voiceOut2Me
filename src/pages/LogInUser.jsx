@@ -4,14 +4,16 @@ import UserLogInImage from "../assets/images/user-log-in-image.svg";
 import Logo from "../assets/images/logo.svg";
 import GoogleLogo from "../assets/images/google-logo.svg";
 import EyeLogo from "../assets/images/eye-logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { schemaLogInUser } from "../util/schema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { selectUser } from "../store/slice/usersSlices";
 
 const LogInUser = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
+  const dispatch=useDispatch()
   const {
     register,
     // formState: { errors },
@@ -32,7 +34,8 @@ const LogInUser = () => {
       (user) => user.userName === userName && user.password === password
     );
     if (findUser) {
-      console.log(findUser);
+      dispatch(selectUser(findUser))
+      navigate("/userdashboard")
     }
   };
 
