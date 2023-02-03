@@ -82,7 +82,7 @@ const LogInUser = () => {
                 <span>Sign in with Google</span>
               </button>
             </div>
-            <div className="flex justify-center items-center w-full mt-[4rem] mb-[2rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[32%] md:ml-[0] lg:[&_span]:w-[25%] xl:[&_span]:w-[29.5%]">
+            <div className="flex justify-center items-center w-full mt-[4rem] mb-[2rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[31%] md:ml-[0] lg:[&_span]:w-[25%] xl:[&_span]:w-[29.5%]">
               <span className=" h-[1px] bg-black"></span>
               <p className="px-2 text-[#1E122D] text-sm">
                 OR LOG IN WITH EMAIL
