@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import LogInCounselor from "./pages/LogInCounselor";
 import LogInUser from "./pages/LogInUser";
 import Service from "./pages/Service";
+import SignUpCounselor from "./pages/SignUpCounselor";
+import SignUpUser from "./pages/SignUpUser";
 import SoonComingPage from "./pages/SoonComingPage";
 import Support from "./pages/Support";
 
@@ -18,6 +20,8 @@ const App = () => {
         <Route index element={<SoonComingPage />} />
         <Route path="loginuser" element={<LogInUser />} />
         <Route path="logincounselor" element={<LogInCounselor />} />
+        <Route path="signupuser" element={<SignUpUser />} />
+        <Route path="signupcounselor" element={<SignUpCounselor />} />
         <Route path="getstarted" element={<GetStarted />} />
         <Route path="bookasession" element={<BookASession />} />
       </Route>
