@@ -16,6 +16,7 @@ const LogInUser = () => {
     register,
     // formState: { errors },
     handleSubmit,
+    // getValues,
   } = useForm({
     mode: "onsubmit",
     criticalMode: "all",
@@ -26,9 +27,12 @@ const LogInUser = () => {
 
   const getUsers = useSelector((state) => state.Users.value.users);
   console.log(getUsers);
-  // const clickHandler = () => {
-  //   navigate("/signupuser");
-  // };
+
+  const submitHandler = (e) => {
+    console.log("userName");
+  };
+
+
   return (
     <>
       <div className="w-full h-full relative font-Lato">
@@ -70,78 +74,79 @@ const LogInUser = () => {
               <h1 className="ml-[5%] lg:ml-0">Sign in into your account</h1>
             </div>
             <div className="w-full flex justify-center items-center mt-[1rem]">
-            <button className="flex gap-5 border-[1px] border-violet-600 w-[16rem] py-3 justify-center items-center rounded">
+              <button className="flex gap-5 border-[1px] border-violet-600 w-[16rem] py-3 justify-center items-center rounded">
                 <img src={GoogleLogo} alt="googleLogo" />
                 <span>Sign in with Google</span>
               </button>
-
             </div>
-            <div className="flex justify-center items-center w-full mt-[4rem] mb-[1rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[31.3%] md:ml-[0] lg:[&_span]:w-[25%] xl:[&_span]:w-[29.5%]">
+            <div className="flex justify-center items-center w-full mt-[4rem] mb-[1rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[32%] md:ml-[0] lg:[&_span]:w-[25%] xl:[&_span]:w-[29.5%]">
               <span className=" h-[1px] bg-black"></span>
               <p className="px-2 text-[#1E122D] text-sm">
                 OR LOG IN WITH EMAIL
               </p>
               <span className="h-[1px] bg-black"></span>
             </div>
-{/* Form section */}
+            {/* Form section */}
             <form
               className=" w-full lg:w-[90%] m-auto"
               action="/#"
-              onSubmit={handleSubmit()}
+              onSubmit={handleSubmit(submitHandler)}
             >
-{/* form sub-section */}
-<div className="ml-[3.5%] ">
-              <section className="w-[90%] lg:w-full m-auto ">
-                <div className="flex relative mb-[1rem] flex-col">
-                  <label className="" htmlFor="userName">
-                    Username:
-                  </label>
-                  <input
-                    className="border-b-[2px] p-2 w-[95%] border-black"
-                    type="text"
-                    {...register("userName")}
-                    name="userName"
-                    id="userName"
-                  />
-                </div>
-
-                <div className="flex relative flex-col">
-                  <label className="" htmlFor="userName">
-                    Password:
-                  </label>
-                  <input
-                    className="border-b-[2px] p-2 w-[95%] border-black"
-                    type="password"
-                    name="password"
-                    {...register("password")}
-                    id="password"
-                  />
-                  <span className="absolute left-[86%] top-[58%] cursor-pointer md:left-[90%] min-[570px]:left-[90.5%]">
-                    <img src={EyeLogo} alt="eyelogo" />
-                  </span>
-                </div>
-                <div>
-                  <div className="flex justify-between w-[80%] mt-3">
-                    <label
-                      className="text-[12px] sm:text-base"
-                      htmlFor="keepMeLogIn"
-                    >
-                      <span>
-                        <input
-                          className="mr-5"
-                          type="checkbox"
-                          name="keepMeLogIn"
-                          id="keepMeLogIn"
-                        />
-                      </span>
-                      Keep me logged in
+              {/* form sub-section */}
+              <div className="ml-[3.5%] ">
+                <section className="w-[90%] lg:w-full m-auto ">
+                  <div className="flex relative mb-[1rem] flex-col">
+                    <label className="" htmlFor="userName">
+                      Username:
                     </label>
-                    <Link className="text-[12px] sm:text-base">Forget password?</Link>
+                    <input
+                      className="border-b-[2px] p-2 w-[95%] border-black"
+                      type="text"
+                      {...register("userName")}
+                      name="userName"
+                      id="userName"
+                    />
                   </div>
-                </div>
-              </section>
-                </div>
-                {/* button section */}
+
+                  <div className="flex relative flex-col">
+                    <label className="" htmlFor="userName">
+                      Password:
+                    </label>
+                    <input
+                      className="border-b-[2px] p-2 w-[95%] border-black"
+                      type="password"
+                      name="password"
+                      {...register("password")}
+                      id="password"
+                    />
+                    <span className="absolute left-[86%] top-[58%] cursor-pointer md:left-[90%] min-[570px]:left-[90.5%]">
+                      <img src={EyeLogo} alt="eyelogo" />
+                    </span>
+                  </div>
+                  <div>
+                    <div className="flex justify-between w-[80%] mt-3">
+                      <label
+                        className="text-[12px] sm:text-base"
+                        htmlFor="keepMeLogIn"
+                      >
+                        <span>
+                          <input
+                            className="mr-5"
+                            type="checkbox"
+                            name="keepMeLogIn"
+                            id="keepMeLogIn"
+                          />
+                        </span>
+                        Keep me logged in
+                      </label>
+                      <Link className="text-[12px] sm:text-base">
+                        Forget password?
+                      </Link>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              {/* button section */}
               <button className="px-[35%] ml-[8%] lg:px-[9.875rem] py-3 bg-[#534B75] text-white lg:ml-[10%] xl:ml-[23%] rounded mt-[3rem] font-medium transition-all hover:opacity-70">
                 Log in
               </button>
@@ -149,7 +154,7 @@ const LogInUser = () => {
             <p className="text-[#414041] mt-[2rem] mb-[5rem] lg:my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">
               Don’t have an account?
               <span className="text-[#938AB4]">
-                <Link to={"/signupuser"} >Create Account</Link>
+                <Link to={"/signupuser"}>Create Account</Link>
               </span>{" "}
             </p>
           </section>

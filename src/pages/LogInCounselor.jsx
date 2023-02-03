@@ -69,7 +69,7 @@ const LogInCounselor = () => {
                 <span>Sign in with Google</span>
               </button>
             </div>
-            <div className="flex justify-center items-center w-full mt-[4rem] mb-[1rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21.5%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[31.5%] md:ml-[-2%] lg:[&_span]:w-[27%] xl:[&_span]:w-[30.5%]">
+            <div className="flex justify-center items-center w-full mt-[4rem] mb-[1rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21.5%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[32%] md:ml-[-2%] lg:[&_span]:w-[27%] xl:[&_span]:w-[30.5%]">
               <span className=" h-[1px] bg-black"></span>
               <p className="px-2 text-[#1E122D] text-sm">
                 OR LOG IN WITH EMAIL
@@ -83,55 +83,61 @@ const LogInCounselor = () => {
               action="#"
               onSubmit={handleSubmit()}
             >
-              <section className="w-[90%] lg:w-full m-auto">
-                <div className="flex relative mb-[2rem]">
-                  <label className="absolute" htmlFor="userName">
-                    Username:
-                  </label>
-                  <input
-                    className="border-b-[2px] pl-[5rem] pt-4 w-[95%] border-black"
-                    type="text"
-                    {...register("userName")}
-                    name="userName"
-                    id="userName"
-                  />
-                </div>
-
-                <div className="flex relative">
-                  <label className="absolute" htmlFor="userName">
-                    Password:
-                  </label>
-                  <input
-                    className="border-b-[2px] px-[5rem] pt-4 w-[95%] border-black"
-                    type="password"
-                    name="password"
-                    {...register("password")}
-                    id="password"
-                  />
-                  <span className="absolute left-[88%] top-[25%] cursor-pointer md:left-[90%] min-[570px]:left-[90.5%]">
-                    <img src={EyeLogo} alt="eyelogo" />
-                  </span>
-                </div>
-                <div>
-                  <div className="flex justify-between w-[80%] mt-3">
-                    <label
-                      className="text-[12px] sm:text-base"
-                      htmlFor="keepMeLogIn"
-                    >
-                      <span>
-                        <input
-                          className="mr-5"
-                          type="checkbox"
-                          name="keepMeLogIn"
-                          id="keepMeLogIn"
-                        />
-                      </span>
-                      Keep me logged in
+              {/* Form sub-section */}
+              <div className="ml-[3.5%] ">
+                <section className="w-[90%] lg:w-full m-auto ">
+                  <div className="flex relative mb-[1rem] flex-col">
+                    <label className="" htmlFor="userName">
+                      Username:
                     </label>
-                    <p className="text-[12px] sm:text-base">Forget password?</p>
+                    <input
+                      className="border-b-[2px] p-2 w-[95%] border-black"
+                      type="text"
+                      {...register("userName")}
+                      name="userName"
+                      id="userName"
+                    />
                   </div>
-                </div>
-              </section>
+
+                  <div className="flex relative flex-col">
+                    <label className="" htmlFor="userName">
+                      Password:
+                    </label>
+                    <input
+                      className="border-b-[2px] p-2 w-[95%] border-black"
+                      type="password"
+                      name="password"
+                      {...register("password")}
+                      id="password"
+                    />
+                    <span className="absolute left-[86%] top-[58%] cursor-pointer md:left-[90%] min-[570px]:left-[90.5%]">
+                      <img src={EyeLogo} alt="eyelogo" />
+                    </span>
+                  </div>
+                  <div>
+                    <div className="flex justify-between w-[80%] mt-3">
+                      <label
+                        className="text-[12px] sm:text-base"
+                        htmlFor="keepMeLogIn"
+                      >
+                        <span>
+                          <input
+                            className="mr-5"
+                            type="checkbox"
+                            name="keepMeLogIn"
+                            id="keepMeLogIn"
+                          />
+                        </span>
+                        Keep me logged in
+                      </label>
+                      <Link className="text-[12px] sm:text-base">
+                        Forget password?
+                      </Link>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              {/* Submit button */}
               <button
                 className="px-[35%] ml-[8%] lg:px-[9.875rem] py-3 bg-[#534B75] text-white lg:ml-[10%] xl:ml-[23%] rounded mt-[3rem] font-medium transition-all hover:opacity-70"
                 type="submit"

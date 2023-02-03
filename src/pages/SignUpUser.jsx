@@ -25,11 +25,10 @@ const SignUpUser = () => {
     setUserInfo({ ...userInfo, [e.target.name]: e.target.value });
   };
 
-
   const {
     register,
     // formState: { errors },
-    // handleSubmit,
+    handleSubmit,
   } = useForm({
     mode: "onsubmit",
     criticalMode: "all",
@@ -37,18 +36,18 @@ const SignUpUser = () => {
     resolver: yupResolver(schemaSignUpUser),
   });
   const submitHandler = (e) => {
-    e.preventDefault()
+    // e.preventDefault()
     const addUser = {
       id: new Date().getMilliseconds(),
       fullName,
       userName,
       email,
       password,
-      terms:keepMeLogIn,
+      terms: keepMeLogIn,
     };
 
-    
     dispatch(addToUsers(addUser));
+    setUserInfo("");
   };
 
   return (
@@ -83,110 +82,105 @@ const SignUpUser = () => {
             <form
               className=" w-full lg:w-[100%] m-auto "
               action="#"
-              onSubmit={submitHandler}
+              onSubmit={handleSubmit(submitHandler)}
             >
-                            {/* form sub section */}
-<div className="flex justify-center items-center flex-col ml-[5%]">
-
-              {/* input section without the checkbox */}
-              <section className="w-[90%] lg:w-full m-auto [&_Input]:w-[90%] ">
-                <div className="flex relative mb-[1rem]  flex-col">
-                  <label className="" htmlFor="fullName">
-                    Full Name:
-                  </label>
-                  <input
-                    className="border-b-[2px] p-2 border-black"
-                    type="text"
-                    {...register("fullName")}
-                    value={userInfo.fullName}
-                    name="fullName"
-                    id="fullName"
-                    onChange={changeHandler}
-                  />
-                </div>
-
-
-                <div className="flex relative mb-[1rem] flex-col">
-                  <label className="" htmlFor="username">
-                    Username:
-                  </label>
-                  <input
-                    className="border-b-[2px]  p-2  border-black"
-                    type="text"
-                    {...register("userName")}
-                    value={userName}
-                    name="userName"
-                    id="Username"
-                    onChange={changeHandler}
-                  />
-                </div>
-                <div className="flex relative mb-[1rem] flex-col">
-                  <label className="" htmlFor="email">
-                    Email:
-                  </label>
-                  <input
-                    className="border-b-[2px] p-2 border-black"
-                    type="text"
-                    {...register("email")}
-                    value={email}
-                    name="email"
-                    id="email"
-                    onChange={changeHandler}
-                  />
-                </div>
-
-                <div className="flex relative flex-col">
-                  <label className="" htmlFor="password">
-                    Password:
-                  </label>
-                  <input
-                    className="border-b-[2px]  p-2 border-black"
-                    type="password"
-                    name="password"
-                    {...register("password")}
-                    value={password}
-                    id="password"
-                    onChange={changeHandler}
-                  />
-                  <span className="absolute left-[82%] top-[50%]  cursor-pointer md:left-[86%] min-[570px]:left-[90.5%]">
-                    <img src={EyeLogo} alt="eyelogo" />
-                  </span>
-                </div>
-              </section>
-              {/* checkbox and policy section */}
-              <section className="w-[92%] ml-3 sm:ml-0 md:w-[67%] lg:w-[95%] md:ml-[-28%] lg:ml-[-10%]  xl:ml-[-35%] flex justify-center items-center mt-3">
-                <label
-                  className="text-[12px] sm:text-base"
-                  htmlFor="keepMeLogIn"
-                >
-                  <span>
+              {/* form sub section */}
+              <div className="flex justify-center items-center flex-col ml-[5%]">
+                {/* input section without the checkbox */}
+                <section className="w-[90%] lg:w-full m-auto [&_Input]:w-[90%] ">
+                  <div className="flex relative mb-[1rem]  flex-col">
+                    <label className="" htmlFor="fullName">
+                      Full Name:
+                    </label>
                     <input
-                      className="mr-2"
-                      type="checkbox"
-                      name="keepMeLogIn"
-                      {...register("keepMeLogIn")}
-                      id="keepMeLogIn"
+                      className="border-b-[2px] p-2 border-black"
+                      type="text"
+                      {...register("fullName")}
+                      value={userInfo.fullName}
+                      name="fullName"
+                      id="fullName"
                       onChange={changeHandler}
-                      value="true"
                     />
-                  </span>
-                  I agree to Voice out to me
-                  <span>
-                    <Link>Terms of Service </Link>
-                  </span>
-                  and Privacy
-                  <span>
-                    <Link> Policy</Link>
-                  </span>
-                </label>
-              </section>
+                  </div>
+
+                  <div className="flex relative mb-[1rem] flex-col">
+                    <label className="" htmlFor="username">
+                      Username:
+                    </label>
+                    <input
+                      className="border-b-[2px]  p-2  border-black"
+                      type="text"
+                      {...register("userName")}
+                      value={userName}
+                      name="userName"
+                      id="Username"
+                      onChange={changeHandler}
+                    />
+                  </div>
+                  <div className="flex relative mb-[1rem] flex-col">
+                    <label className="" htmlFor="email">
+                      Email:
+                    </label>
+                    <input
+                      className="border-b-[2px] p-2 border-black"
+                      type="text"
+                      {...register("email")}
+                      value={email}
+                      name="email"
+                      id="email"
+                      onChange={changeHandler}
+                    />
+                  </div>
+
+                  <div className="flex relative flex-col">
+                    <label className="" htmlFor="password">
+                      Password:
+                    </label>
+                    <input
+                      className="border-b-[2px]  p-2 border-black"
+                      type="password"
+                      name="password"
+                      {...register("password")}
+                      value={password}
+                      id="password"
+                      onChange={changeHandler}
+                    />
+                    <span className="absolute left-[82%] top-[50%]  cursor-pointer md:left-[86%] min-[570px]:left-[90.5%]">
+                      <img src={EyeLogo} alt="eyelogo" />
+                    </span>
+                  </div>
+                </section>
+                {/* checkbox and policy section */}
+                <section className="w-[92%] ml-3 sm:ml-0 md:w-[67%] lg:w-[95%] md:ml-[-28%] lg:ml-[-10%]  xl:ml-[-35%] flex justify-center items-center mt-3">
+                  <label
+                    className="text-[12px] sm:text-base"
+                    htmlFor="keepMeLogIn"
+                  >
+                    <span>
+                      <input
+                        className="mr-2"
+                        type="checkbox"
+                        name="keepMeLogIn"
+                        {...register("keepMeLogIn")}
+                        id="keepMeLogIn"
+                        onChange={changeHandler}
+                        value="true"
+                      />
+                    </span>
+                    I agree to Voice out to me
+                    <span>
+                      <Link>Terms of Service </Link>
+                    </span>
+                    and Privacy
+                    <span>
+                      <Link> Policy</Link>
+                    </span>
+                  </label>
+                </section>
               </div>
               {/* submit button */}
               <div className="flex justify-center items-center w-full">
-                <button
-                  className=" w-[80%] md:w-[60%] md:ml-[-5%]  py-3 bg-[#534B75] text-white rounded mt-[3rem] font-medium transition-all hover:opacity-70"
-            
-                >
+                <button className=" w-[80%] md:w-[60%] md:ml-[-5%]  py-3 bg-[#534B75] text-white rounded mt-[3rem] font-medium transition-all hover:opacity-70">
                   Create Account
                 </button>
               </div>
