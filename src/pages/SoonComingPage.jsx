@@ -41,7 +41,6 @@ const SoonComingPage = () => {
   };
 
   const submitHandler = async (e) => {
-    // e.preventDefault();
     const emialApi =
     "https://v1.nocodeapi.com/voiceout2me/google_sheets/HuKXRGNHEoAOgyOh?tabId=sheet1"
 

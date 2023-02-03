@@ -11,7 +11,7 @@ const UserDashboard = () => {
         <h1>User Disbord</h1>
       </section>
       <section>
-        <h1> Welcom {selectedUser.fullName} to Voice Out to me.</h1>
+        <h1> Welcom {selectedUser.fullName} to VoiceOut2Me.</h1>
       </section>
     </>
   );

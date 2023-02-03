@@ -44,7 +44,6 @@ const SignUpCounselor = () => {
   });
 
   const submitHandler = (e) => {
-    console.log("hi");
     const addUser = {
       id: new Date().getMilliseconds(),
       fullName,
