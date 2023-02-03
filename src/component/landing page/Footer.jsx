@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   const submitHandler = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     // const NotifyEmialApi =
     // "https://v1.nocodeapi.com/voiceout2me/google_sheets/HuKXRGNHEoAOgyOh?tabId=sheet1"
 

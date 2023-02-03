@@ -3,7 +3,7 @@ import GoogleLogo from "../assets/images/google-logo.svg";
 import FacebookLogo from "../assets/images/facebook-logo.svg";
 import UserSignupIMage from "../assets/images/user-signup-image.svg";
 import EyeLogo from "../assets/images/eye-logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { schemaSignUpUser } from "../util/schema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
@@ -12,6 +12,7 @@ import { addToUsers } from "../store/slice/usersSlices";
 import { useState } from "react";
 
 const SignUpUser = () => {
+ const navigate =useNavigate()
   const dispatch = useDispatch();
   const [userInfo, setUserInfo] = useState({
     fullName: "",
@@ -36,7 +37,6 @@ const SignUpUser = () => {
     resolver: yupResolver(schemaSignUpUser),
   });
   const submitHandler = (e) => {
-    // e.preventDefault()
     const addUser = {
       id: new Date().getMilliseconds(),
       fullName,
@@ -46,7 +46,9 @@ const SignUpUser = () => {
       terms: keepMeLogIn,
     };
 
-    dispatch(addToUsers(addUser));
+    if( dispatch(addToUsers(addUser))){
+      navigate("/loginuser")
+    };
     setUserInfo("");
   };
 
@@ -96,7 +98,7 @@ const SignUpUser = () => {
                       className="border-b-[2px] p-2 border-black"
                       type="text"
                       {...register("fullName")}
-                      value={userInfo.fullName}
+                      value={fullName}
                       name="fullName"
                       id="fullName"
                       onChange={changeHandler}

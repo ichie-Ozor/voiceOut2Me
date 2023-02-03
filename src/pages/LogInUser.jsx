@@ -16,7 +16,7 @@ const LogInUser = () => {
     register,
     // formState: { errors },
     handleSubmit,
-    // getValues,
+    getValues,
   } = useForm({
     mode: "onsubmit",
     criticalMode: "all",
@@ -26,12 +26,15 @@ const LogInUser = () => {
   });
 
   const getUsers = useSelector((state) => state.Users.value.users);
-  console.log(getUsers);
-
   const submitHandler = (e) => {
-    console.log("userName");
+    const { userName, password } = getValues();
+    const findUser = getUsers.find(
+      (user) => user.userName === userName && user.password === password
+    );
+    if (findUser) {
+      console.log(findUser);
+    }
   };
-
 
   return (
     <>
