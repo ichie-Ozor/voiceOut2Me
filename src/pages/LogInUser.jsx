@@ -13,7 +13,7 @@ import { selectUser } from "../store/slice/usersSlices";
 
 const LogInUser = () => {
   const navigate = useNavigate();
-  const dispatch=useDispatch()
+  const dispatch = useDispatch();
   const {
     register,
     // formState: { errors },
@@ -34,11 +34,10 @@ const LogInUser = () => {
       (user) => user.userName === userName && user.password === password
     );
     if (findUser) {
-      dispatch(selectUser(findUser))
-      navigate("/userdashboard")
-    }
-    else{
-      alert("User name and password does not exit. Please try again")
+      dispatch(selectUser(findUser));
+      navigate("/userdashboard");
+    } else {
+      alert("User name and password does not exit. Please try again");
     }
   };
 
@@ -88,12 +87,12 @@ const LogInUser = () => {
                 <span>Sign in with Google</span>
               </button>
             </div>
-            <div className="flex justify-center items-center w-full mt-[4rem] mb-[2rem] ml-[-1%] [&_span]:w-[17%] min-[375px]:[&_span]:w-[21%]  min-[562px]:[&_span]:w-[27%] md:[&_span]:w-[31%] md:ml-[0] lg:[&_span]:w-[25%] xl:[&_span]:w-[29.5%]">
-              <span className=" h-[1px] bg-black"></span>
+            <div className="flex justify-center items-center w-full mt-[4rem] mb-[2rem] ml-[-1%]  md:ml-[0] ">
+              <span className=" h-[1px] bg-black w-[17.5%] min-[375px]:w-[18%] min-[570px]:w-[26%] md:w-[30%] lg:w-[25%] xl:w-[29.5%]"></span>
               <p className="px-2 text-[#1E122D] text-sm">
                 OR LOG IN WITH EMAIL
               </p>
-              <span className="h-[1px] bg-black"></span>
+              <span className="h-[1px] bg-black w-[17%] min-[375px]:w-[18%] min-[570px]:w-[26%] md:w-[30%] lg:w-[25%] xl:w-[29.5%]"></span>
             </div>
             {/* Form section */}
             <form
@@ -133,7 +132,7 @@ const LogInUser = () => {
                     </span>
                   </div>
                   <div>
-                    <div className="flex justify-between w-[80%] mt-3">
+                    <div className="flex justify-between w-[95%] mt-3">
                       <label
                         className="text-[12px] sm:text-base"
                         htmlFor="keepMeLogIn"
@@ -156,16 +155,20 @@ const LogInUser = () => {
                 </section>
               </div>
               {/* button section */}
-              <button className="px-[35%] ml-[8%] lg:px-[9.875rem] py-3 bg-[#534B75] text-white lg:ml-[10%] xl:ml-[23%] rounded mt-[3rem] font-medium transition-all hover:opacity-70">
-                Log in
-              </button>
+              <div className="w-full flex justify-center items-center">
+                <button className="w-[88%] md:w-[83%] lg:w-[95.5%] xl:w-[92%] py-3 bg-[#534B75] text-white  rounded mt-[3rem] font-medium transition-all hover:opacity-70">
+                  Log in
+                </button>
+              </div>
             </form>
-            <p className="text-[#414041] mt-[2rem] mb-[5rem] lg:my-[1rem] lg:mt-[5rem] ml-[8%] lg:ml-0">
-              Don’t have an account?
-              <span className="text-[#938AB4]">
-                <Link to={"/signupuser"}>Create Account</Link>
-              </span>{" "}
-            </p>
+            <div className="w-full">
+              <p className="text-[#414041]  mb-[5rem] ml-4  md:ml-[7.5%] lg:ml-[5.5%] xl:ml-[7.5%] p-2">
+                Don’t have an account?
+                <span className="text-[#534B75] font-bold">
+                  <Link to={"/signupuser"}>Create Account</Link>
+                </span>{" "}
+              </p>
+            </div>
           </section>
         </main>
       </div>
